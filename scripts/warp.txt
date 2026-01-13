@@ -1,0 +1,3 @@
+input /equip ring1 "Warp Ring"
+wait 6
+input /item "Warp Ring" <me>

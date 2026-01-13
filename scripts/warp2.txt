@@ -1,0 +1,3 @@
+input /equip ring2 "Dim. ring (Holla)"
+wait 8
+input /item "Dim. ring (Holla)" <me>
