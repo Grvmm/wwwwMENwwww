@@ -17,7 +17,6 @@
       <string>Cure</string>
       <string>Cura</string>
       <string>Curaga</string>
-      <string>Follow</string>
       <string>Trigger #2</string>
       <string>Trigger #5</string>
       <string>Songs</string>
@@ -26,18 +25,18 @@
   <Fighting>
     <Combat_Action>
       <Combat>
-        <Name />
+        <Name>Zazuzen</Name>
         <Enabled>false</Enabled>
         <Auto_Distance>false</Auto_Distance>
-        <Engage>false</Engage>
+        <Engage>true</Engage>
         <Disengage>false</Disengage>
-        <Run>false</Run>
+        <Run>true</Run>
         <Allow_Interruptions>false</Allow_Interruptions>
-        <Face_Toward>false</Face_Toward>
+        <Face_Toward>true</Face_Toward>
         <Face_Away>false</Face_Away>
         <Lockon>false</Lockon>
         <Lockoff>false</Lockoff>
-        <Max_Distance>3</Max_Distance>
+        <Max_Distance>2.25</Max_Distance>
         <Min_Distance>0</Min_Distance>
         <Position>
           <Enabled>false</Enabled>
@@ -252,16 +251,16 @@
       <Enabled>false</Enabled>
       <Enable_Enemy_HP>false</Enable_Enemy_HP>
       <MP_Limit>false</MP_Limit>
-      <WeaponType />
-      <WeaponSkill />
+      <WeaponType>Sword</WeaponType>
+      <WeaponSkill>Savage Blade</WeaponSkill>
       <Enable_Target>false</Enable_Target>
-      <Engaged_Check>false</Engaged_Check>
+      <Engaged_Check>true</Engaged_Check>
       <Disable_Face>false</Disable_Face>
       <Enable_Lock_On>false</Enable_Lock_On>
       <Target />
       <Script />
       <Command_Pause>2</Command_Pause>
-      <TP_Threshold>1000</TP_Threshold>
+      <TP_Threshold>3000</TP_Threshold>
       <High_MP_Threshold>100</High_MP_Threshold>
       <Low_MP_Threshold>0</Low_MP_Threshold>
       <High_HP_Threshold>100</High_HP_Threshold>
@@ -274,7 +273,7 @@
     </Weaponskills>
     <Movement>
       <Follow>
-        <Enabled>true</Enabled>
+        <Enabled>false</Enabled>
         <Face_Toward>false</Face_Toward>
         <Face_Away>false</Face_Away>
         <Face_Same_Direction>false</Face_Same_Direction>
@@ -521,8 +520,8 @@
     <Priority_Count>1</Priority_Count>
     <Cure_List>
       <string>Mimiao</string>
-      <string>Arwel</string>
       <string>Saiizo</string>
+      <string>Arwel</string>
       <string>Mimiho</string>
       <string>Zazuzen</string>
       <string>Mongowongo</string>
@@ -537,13 +536,13 @@
         <Cure_III>450</Cure_III>
         <Cure_III_Enabled>true</Cure_III_Enabled>
         <Cure_IV>900</Cure_IV>
-        <Cure_IV_Enabled>false</Cure_IV_Enabled>
+        <Cure_IV_Enabled>true</Cure_IV_Enabled>
         <Cure_V>1100</Cure_V>
         <Cure_V_Enabled>false</Cure_V_Enabled>
         <Cure_VI>1400</Cure_VI>
         <Cure_VI_Enabled>false</Cure_VI_Enabled>
         <Threshold>61</Threshold>
-        <Priority_Threshold>97</Priority_Threshold>
+        <Priority_Threshold>74</Priority_Threshold>
         <Priority_Promote_Rate>2</Priority_Promote_Rate>
         <Over_Cure>48</Over_Cure>
         <FC_Enabled>false</FC_Enabled>
@@ -552,7 +551,7 @@
       </Cure>
       <Curaga>
         <Enabled>true</Enabled>
-        <Curaga_I>150</Curaga_I>
+        <Curaga_I>152</Curaga_I>
         <Curaga_I_Enabled>true</Curaga_I_Enabled>
         <Curaga_II>300</Curaga_II>
         <Curaga_II_Enabled>true</Curaga_II_Enabled>
@@ -562,7 +561,7 @@
         <Curaga_IV_Enabled>false</Curaga_IV_Enabled>
         <Curaga_V>1500</Curaga_V>
         <Curaga_V_Enabled>false</Curaga_V_Enabled>
-        <Threshold>51</Threshold>
+        <Threshold>62</Threshold>
         <Over_Cure>30</Over_Cure>
         <Targets>2</Targets>
       </Curaga>
@@ -2227,11 +2226,11 @@
   <Songs>
     <Ignore_List />
     <Enabled>true</Enabled>
-    <Dummy_Count>5</Dummy_Count>
+    <Dummy_Count>2</Dummy_Count>
     <Base_Count>4</Base_Count>
     <Total_Song_Count>5</Total_Song_Count>
     <Pianissmo_Dummy>false</Pianissmo_Dummy>
-    <Dummy_First>true</Dummy_First>
+    <Dummy_First>false</Dummy_First>
     <Song_1>
       <Name>Valor Minuet III</Name>
       <Target />
@@ -2282,53 +2281,53 @@
       <ID>382</ID>
     </Dummy_2>
     <Dummy_3>
+      <Name>Knight's Minne IV</Name>
+      <Target />
+      <Buff>Minne</Buff>
+      <Buff2 />
+      <ID>392</ID>
+    </Dummy_3>
+    <Dummy_4>
       <Name>Army's Paeon III</Name>
       <Target />
       <Buff>Paeon</Buff>
       <Buff2 />
       <ID>380</ID>
-    </Dummy_3>
-    <Dummy_4>
+    </Dummy_4>
+    <Dummy_5>
       <Name>Army's Paeon II</Name>
       <Target />
       <Buff>Paeon</Buff>
       <Buff2 />
       <ID>379</ID>
-    </Dummy_4>
-    <Dummy_5>
-      <Name>Army's Paeon IV</Name>
-      <Target />
-      <Buff>Paeon</Buff>
-      <Buff2 />
-      <ID>381</ID>
     </Dummy_5>
     <Pianissimo_1>
-      <Name>Mage's Ballad II</Name>
-      <Target>Mimiao</Target>
-      <Buff>Ballad</Buff>
-      <Buff2>Any</Buff2>
-      <ID>387</ID>
+      <Name />
+      <Target />
+      <Buff />
+      <Buff2 />
+      <ID>0</ID>
     </Pianissimo_1>
     <Pianissimo_2>
-      <Name>Mage's Ballad III</Name>
-      <Target>Mimiao</Target>
-      <Buff>Ballad</Buff>
-      <Buff2>Any</Buff2>
-      <ID>388</ID>
+      <Name />
+      <Target />
+      <Buff />
+      <Buff2 />
+      <ID>0</ID>
     </Pianissimo_2>
     <Pianissimo_3>
-      <Name>Knight's Minne V</Name>
-      <Target>Saiizo</Target>
-      <Buff>Minne</Buff>
-      <Buff2>Any</Buff2>
-      <ID>393</ID>
+      <Name />
+      <Target />
+      <Buff />
+      <Buff2 />
+      <ID>0</ID>
     </Pianissimo_3>
     <Pianissimo_4>
-      <Name>Foe Sirvente</Name>
-      <Target>Saiizo</Target>
-      <Buff>Sirvente</Buff>
-      <Buff2>Any</Buff2>
-      <ID>468</ID>
+      <Name />
+      <Target />
+      <Buff />
+      <Buff2 />
+      <ID>0</ID>
     </Pianissimo_4>
     <Pianissimo_5>
       <Name />
@@ -2380,7 +2379,7 @@
     <NiTro_Warning_Message>Intergalactic Bound!</NiTro_Warning_Message>
     <NiTro_Warning_Time>10</NiTro_Warning_Time>
     <NiTro_Range>10</NiTro_Range>
-    <NiTro_Players>5</NiTro_Players>
+    <NiTro_Players>2</NiTro_Players>
     <Pause_Clarion_Call>true</Pause_Clarion_Call>
   </Songs>
   <Scripts>

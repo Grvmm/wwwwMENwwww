@@ -542,7 +542,7 @@
         <Cure_V_Enabled>false</Cure_V_Enabled>
         <Cure_VI>1400</Cure_VI>
         <Cure_VI_Enabled>false</Cure_VI_Enabled>
-        <Threshold>61</Threshold>
+        <Threshold>65</Threshold>
         <Priority_Threshold>97</Priority_Threshold>
         <Priority_Promote_Rate>2</Priority_Promote_Rate>
         <Over_Cure>48</Over_Cure>
@@ -2172,9 +2172,9 @@
     <Geo_Target />
     <Geo_Assist>Saiizo</Geo_Assist>
     <Geo_Check_Enabled>false</Geo_Check_Enabled>
-    <Entrust_Target>Arewl</Entrust_Target>
+    <Entrust_Target>Arwel</Entrust_Target>
     <Entrust_Assist />
-    <Entrust_Check_Enabled>true</Entrust_Check_Enabled>
+    <Entrust_Check_Enabled>false</Entrust_Check_Enabled>
     <Geo_Offset>0</Geo_Offset>
     <Geo_Position />
   </Geomancy>

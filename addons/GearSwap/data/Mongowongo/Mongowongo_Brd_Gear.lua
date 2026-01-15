@@ -265,27 +265,27 @@ function init_gear_sets()
 		waist="Embla Sash", -- Replace with Harfner's Stash when I get them for string skill
 		right_ear="Enchntr. Earring +1",  -- Replace with gersemi Earring when I get them for string skill
 	})
-    sets.midcast.Elegy = {range="Blurred harp +1"}
-    sets.midcast.Requiem = {range="Blurred harp +1"}
-    sets.midcast.Madrigal = {head="Fili Calot +2",range="Blurred harp +1"}
-    sets.midcast.March = {hands="Fili Manchettes +2",range="Blurred harp +1"}
-    sets.midcast.Minne = {legs="Mou. Seraweels +1",range="Blurred harp +1"}
-    sets.midcast.Minuet = {body="Brioso Justau. +2",range="Blurred harp +1"}
+    sets.midcast.Elegy = {range="Gjallarhorn"}
+    sets.midcast.Requiem = {range="Gjallarhorn"}
+    sets.midcast.Madrigal = {head="Fili Calot +2",range="Gjallarhorn"}
+    sets.midcast.March = {hands="Fili Manchettes +2",range="Gjallarhorn"}
+    sets.midcast.Minne = {legs="Mou. Seraweels +1",range="Gjallarhorn"}
+    sets.midcast.Minuet = {body="Brioso Justau. +2",range="Gjallarhorn"}
 	-- I'm using this for dummy songs instead of the stupid mode as you'll never use a paeon for real
     sets.midcast.Paeon = {
 		range="Daurdabla",
 		main="Barawc",
 		sub="Culminus"
 	}
-    sets.midcast.Mambo = {feet="Mou. Crackows",range="Blurred harp +1"}
+    sets.midcast.Mambo = {feet="Mou. Crackows",range="Gjallarhorn"}
     sets.midcast.Threnody = set_combine(sets.midcast.SongEffect,{
-		body="Mousai Manteel +1",range="Blurred harp +1"
+		body="Mousai Manteel +1",range="Gjallarhorn"
 	})
 	
 	
-    sets.midcast['Adventurer\'s Dirge'] = {range="Blurred harp +1",}
-    sets.midcast['Foe Sirvente'] = {range="Blurred harp +1"}
-    sets.midcast['Magic Finale'] = {legs="Fili Rhingrave",range="Blurred harp +1"}
+    sets.midcast['Adventurer\'s Dirge'] = {range="Gjallarhorn",}
+    sets.midcast['Foe Sirvente'] = {range="Gjallarhorn"}
+    sets.midcast['Magic Finale'] = {legs="Fili Rhingrave",range="Gjallarhorn"}
     sets.midcast["Sentinel's Scherzo"] = {feet="Fili Cothurnes +2"}
     sets.midcast["Aria of Passion"] = {range="Loughnashade"}
 	sets.midcast['Honor March'] = set_combine(sets.precast.FC.BardSong,{range="Marsyas"})
