@@ -76,7 +76,7 @@ function init_gear_sets()
 
     sets.precast.Step = {ammo="C. Palug Stone",
         head="Dampening Tam",neck="Combatant's Torque",left_ear="Telos Earring",right_ear="Digni. Earring",
-        body="Mummu Jacket +2",hands="Adhemar Wrist. +1",left_ring="Ramuh Ring +1",right_ring="Ramuh Ring +1",
+        body="Mummu Jacket +2",hands="Maculele bangles +3",left_ring="Ramuh Ring +1",right_ring="Ramuh Ring +1",
         back=gear.stp_jse_back,waist="Olseni Belt",legs="Meg. Chausses +2",feet="Malignance Boots"}
 		
     sets.Enmity = {ammo="Paeapua",
@@ -105,7 +105,7 @@ function init_gear_sets()
         hands="Maculele bangles +3",
     }
     sets.precast.Flourish3 = {}
-    sets.precast.Flourish3['Striking Flourish'] = {} --body="Horos Casaque +3"
+    sets.precast.Flourish3['Striking Flourish'] = {body="Horos Casaque +3"}
     sets.precast.Flourish3['Climactic Flourish'] = {
         head="Maculele Tiara +3",
         hands="Maculele bangles +3",
@@ -126,13 +126,13 @@ function init_gear_sets()
     -- Default set for any weaponskill that isn't any more specifically defined
     sets.precast.WS = {
         ammo="Knobkierrie",
-        head="Maculele Tiara +3",
+		head={ name="Nyame Helm", augments={'Path: B',}},
         neck={ name="Etoile Gorget +2", augments={'Path: A',}},
         -- Ears are probably also set by MaxTP sets below
         left_ear="Ishvara Earring",
-        right_ear="Mache Earring",
+        right_ear="Maculele Earring",
         body={ name="Nyame Mail", augments={'Path: B',}},
-        hands={ name="Nyame Gauntlets", augments={'Path: B',}}, -- "Maculele bangles +3",
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
         left_ring="Epaminondas's Ring",
         right_ring="Cornelia's Ring",
         back=gear.wsd_jse_back,
@@ -162,13 +162,13 @@ function init_gear_sets()
         feet="Malignance Boots",
         left_ring="Karieth Ring"
     })
-	sets.precast.WS.Proc = {ammo="Yamarang",
-        head="Wh. Rarab Cap +1",neck="Loricate Torque +1",left_ear="Brutal Earring",right_ear="Sanare Earring",
-        body="Dread Jupon",hands="Kurys Gloves",left_ring="Defending Ring",right_ring="Dark Ring",
-        back="Moonlight Cape",waist="Flume Belt +1",legs="Dashing Subligar",feet="Ahosi Leggings"}
+	sets.precast.WS.Proc = set_combine(sets.precast.WS, {
+        hands="Maculele bangles +3",
+        legs="Maxixi Tights +3"
+    })
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {head="Maculele Tiara +3",back=gear.wsd_jse_back})
+    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {})
     sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS.Acc, {})
 	sets.precast.WS["Rudra's Storm"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -206,11 +206,12 @@ function init_gear_sets()
     }
 	sets.AccMaxTP = {left_ear="Assuage Earring",right_ear="Telos Earring"}
 	
-    sets.Skillchain = {hands="Maculele bangles +3",}
-    
+    sets.Skillchain = set_combine(sets.precast.WS, {
+        hands="Maculele bangles +3",
+        legs="Maxixi Tights +3"
+    })
     
     -- Midcast Sets
-    
     sets.midcast.FastRecast = {
         head=gear.herculean_fc_head,neck="Voltsurge Torque",left_ear="Enchntr. Earring +1",right_ear="Loquac. Earring",
         body="Dread Jupon",hands="Leyline Gloves",left_ring="Defending Ring",right_ring="Prolix Ring",
@@ -276,20 +277,10 @@ function init_gear_sets()
 		right_ring="Defending Ring",
         back=gear.stp_jse_back
     }
-	sets.defense.MEVA = {
-		head="Nyame Helm",
-		body="Nyame Mail",
-		hands="Raetic Bangles",
-		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet="Nyame Sollerets",
-		neck="Elite Royal Collar",
-		waist="Plat. Mog. Belt",
-		left_ear="Infused Earring",
-		right_ear="Eabani Earring",
-		left_ring="Moonlight Ring",
-		right_ring="Defending Ring",
-        back=gear.stp_jse_back
-    }
+	sets.defense.MEVA = set_combine(sets.precast.WS, {
+        hands="Maculele bangles +3",
+        legs="Maxixi Tights +3"
+    })
 
     sets.Kiting = {feet="Skd. Jambeaux +1"}
 

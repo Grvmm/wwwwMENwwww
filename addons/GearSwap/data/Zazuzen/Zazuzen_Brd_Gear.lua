@@ -176,7 +176,7 @@ function init_gear_sets()
 		neck={ name="Bard's Charm +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Ishvara Earring",
-		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+		right_ear="Telos Earring",
 		left_ring="Epaminondas's Ring",
 		right_ring="Cornelia's Ring",
 		back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
@@ -192,7 +192,7 @@ function init_gear_sets()
 		neck={ name="Bard's Charm +2", augments={'Path: A',}},
 		waist="Artful Belt +1",
 		left_ear="Ishvara Earring",
-		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
+		right_ear="Telos Earring",
 		left_ring="Epaminondas's Ring",
 		right_ring="Cornelia's Ring",
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','Weapon skill damage +10%','Damage taken-5%',}},
@@ -224,9 +224,9 @@ function init_gear_sets()
 		neck={ name="Bard's Charm +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
 		left_ear="Ishvara Earring",
-		right_ear={ name="Moonshade Earring", augments={'Attack+4','TP Bonus +250',}},
-		left_ring="Epaminondas's Ring",
-		right_ring="Cornelia's Ring",
+		right_ear="Telos Earring",
+        left_ring="Epaminondas's Ring",
+        right_ring="Cornelia's Ring",
 		back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 
@@ -451,7 +451,7 @@ function init_gear_sets()
 		left_ear="Infused Earring",
 		right_ear="Eabani Earring",
 		left_ring="Moonlight Ring",
-		right_ring="Defending Ring",
+		right_ring="Moonlight Ring",
 		back={ name="Intarabus's Cape", augments={'AGI+20','Eva.+20 /Mag. Eva.+20','Evasion+10','Enmity+10','Evasion+15',}},
 	}
 
