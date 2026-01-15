@@ -496,6 +496,7 @@ function init_gear_sets()
 	-- TODO: Check how to manage gear based on TP and HASTE levels, EX: Max store TP until 1k unless AM3 is down then until 3k and swap to White after 1k
 	
 	sets.engaged = {
+		main="Naegling",
 		range={ name="Linos", augments={'Accuracy+12 Attack+12','"Store TP"+4',}},
 		head="Aya. Zucchetto +2",
 		body="Ayanmo Corazza +2",
