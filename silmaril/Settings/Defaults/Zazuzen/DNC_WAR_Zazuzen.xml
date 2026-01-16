@@ -4,24 +4,31 @@
   <Priority>
     <Priority_Rank>
       <string>Medicine</string>
+      <string>Follow</string>
+      <string>Trigger #7</string>
+      <string>Trigger #2</string>
+      <string>Combat</string>
+      <string>Weaponskills</string>
+      <string>Job Abilities</string>
+      <string>Food Use</string>
     </Priority_Rank>
   </Priority>
   <Fighting>
     <Combat_Action>
       <Combat>
-        <Name />
-        <Enabled>false</Enabled>
+        <Name>Mimiho</Name>
+        <Enabled>true</Enabled>
         <Auto_Distance>false</Auto_Distance>
-        <Engage>false</Engage>
+        <Engage>true</Engage>
         <Disengage>false</Disengage>
-        <Run>false</Run>
+        <Run>true</Run>
         <Allow_Interruptions>false</Allow_Interruptions>
-        <Face_Toward>false</Face_Toward>
+        <Face_Toward>true</Face_Toward>
         <Face_Away>false</Face_Away>
         <Lockon>false</Lockon>
         <Lockoff>false</Lockoff>
         <Max_Distance>3</Max_Distance>
-        <Min_Distance>0</Min_Distance>
+        <Min_Distance>0.25</Min_Distance>
         <Position>
           <Enabled>false</Enabled>
           <All_Enemies>true</All_Enemies>
@@ -49,7 +56,7 @@
         <Reset>false</Reset>
         <Enable_Script_Target>false</Enable_Script_Target>
         <Script_Target_Engaged>false</Script_Target_Engaged>
-        <Enable_Action_Target>false</Enable_Action_Target>
+        <Enable_Action_Target>true</Enable_Action_Target>
         <Script_Target />
         <Action_Target />
         <Name />
@@ -232,13 +239,13 @@
       </Shooting>
     </Combat_Action>
     <Weaponskills>
-      <Enabled>false</Enabled>
+      <Enabled>true</Enabled>
       <Enable_Enemy_HP>false</Enable_Enemy_HP>
       <MP_Limit>false</MP_Limit>
-      <WeaponType />
-      <WeaponSkill />
+      <WeaponType>Dagger</WeaponType>
+      <WeaponSkill>Rudra's Storm</WeaponSkill>
       <Enable_Target>false</Enable_Target>
-      <Engaged_Check>false</Engaged_Check>
+      <Engaged_Check>true</Engaged_Check>
       <Disable_Face>false</Disable_Face>
       <Enable_Lock_On>false</Enable_Lock_On>
       <Target />
@@ -251,18 +258,18 @@
       <Low_HP_Threshold>0</Low_HP_Threshold>
       <Cycle>0</Cycle>
       <AM_Enabled>false</AM_Enabled>
-      <AM_Level>0</AM_Level>
-      <AM_Type />
-      <AM_Skill />
+      <AM_Level>3</AM_Level>
+      <AM_Type>Dagger</AM_Type>
+      <AM_Skill>Rudra's Storm</AM_Skill>
     </Weaponskills>
     <Movement>
       <Follow>
-        <Enabled>false</Enabled>
+        <Enabled>true</Enabled>
         <Face_Toward>false</Face_Toward>
         <Face_Away>false</Face_Away>
         <Face_Same_Direction>false</Face_Same_Direction>
         <Face_Opposite_Direction>false</Face_Opposite_Direction>
-        <Name />
+        <Name>Mimiho</Name>
         <Max_Distance>3</Max_Distance>
         <Min_Distance>0</Min_Distance>
       </Follow>
@@ -277,16 +284,16 @@
     <Skillchains>
       <Leader>
         <Enabled>false</Enabled>
-        <Partner />
+        <Partner>Zazuzen</Partner>
         <Enable_Target>false</Enable_Target>
         <Target />
         <Enable_Lock_On>false</Enable_Lock_On>
-        <Partner_TP_Threshold>1000</Partner_TP_Threshold>
-        <Partner_Engaged>true</Partner_Engaged>
+        <Partner_TP_Threshold>1750</Partner_TP_Threshold>
+        <Partner_Engaged>false</Partner_Engaged>
         <Player_Engaged>true</Player_Engaged>
-        <Leader_TP_Threshold>1000</Leader_TP_Threshold>
-        <WeaponType />
-        <WeaponSkill />
+        <Leader_TP_Threshold>1750</Leader_TP_Threshold>
+        <WeaponType>Dagger</WeaponType>
+        <WeaponSkill>Rudra's Storm</WeaponSkill>
         <Script />
         <Command_Pause>2</Command_Pause>
         <Cycle>10</Cycle>
@@ -294,18 +301,18 @@
       </Leader>
       <Follower1>
         <Enabled>false</Enabled>
-        <Partner />
-        <Partner_WeaponType />
-        <Partner_WeaponSkill />
-        <Start>0</Start>
+        <Partner>Zazuzen</Partner>
+        <Partner_WeaponType>Dagger</Partner_WeaponType>
+        <Partner_WeaponSkill>Rudra's Storm</Partner_WeaponSkill>
+        <Start>3</Start>
         <End>7.5</End>
-        <TP_Threshold>0</TP_Threshold>
-        <WeaponType />
-        <WeaponSkill />
+        <TP_Threshold>1750</TP_Threshold>
+        <WeaponType>Dagger</WeaponType>
+        <WeaponSkill>Rudra's Storm</WeaponSkill>
         <Script />
         <Command_Pause>2</Command_Pause>
         <Cycle>5</Cycle>
-        <Pause>false</Pause>
+        <Pause>true</Pause>
       </Follower1>
       <Follower2>
         <Enabled>false</Enabled>
@@ -790,9 +797,9 @@
     <Low_Priority />
   </Enhancing>
   <Abilities>
-    <Enabled>false</Enabled>
+    <Enabled>true</Enabled>
     <Main_Job>
-      <Name />
+      <Name>Dancer</Name>
       <Warrior>
         <Mighty_Strikes>false</Mighty_Strikes>
         <Provoke>false</Provoke>
@@ -1232,33 +1239,33 @@
       <Dancer>
         <Trance>false</Trance>
         <Samba />
-        <Maintain_Step_Time>10</Maintain_Step_Time>
-        <Build_Step_Time>0</Build_Step_Time>
-        <Flourish_III_WS_Only>false</Flourish_III_WS_Only>
+        <Maintain_Step_Time>-20</Maintain_Step_Time>
+        <Build_Step_Time>5</Build_Step_Time>
+        <Flourish_III_WS_Only>true</Flourish_III_WS_Only>
         <Quickstep>false</Quickstep>
-        <Box_Step>false</Box_Step>
+        <Box_Step>true</Box_Step>
         <Stutter_Step>false</Stutter_Step>
         <Feather_Step>false</Feather_Step>
         <Animated_Flourish>false</Animated_Flourish>
         <Animated_Flourish_Count>0</Animated_Flourish_Count>
         <Desperate_Flourish>false</Desperate_Flourish>
         <Violent_Flourish>false</Violent_Flourish>
-        <Reverse_Flourish>false</Reverse_Flourish>
-        <Reverse_Flourish_Count>0</Reverse_Flourish_Count>
-        <Reverse_Flourish_TP>0</Reverse_Flourish_TP>
+        <Reverse_Flourish>true</Reverse_Flourish>
+        <Reverse_Flourish_Count>4</Reverse_Flourish_Count>
+        <Reverse_Flourish_TP>800</Reverse_Flourish_TP>
         <Building_Flourish>false</Building_Flourish>
         <Building_Flourish_Count>0</Building_Flourish_Count>
         <Building_Flourish_TP>0</Building_Flourish_TP>
         <Wild_Flourish>false</Wild_Flourish>
-        <Climactic_Flourish>false</Climactic_Flourish>
-        <Climactic_Flourish_Count>0</Climactic_Flourish_Count>
+        <Climactic_Flourish>true</Climactic_Flourish>
+        <Climactic_Flourish_Count>1</Climactic_Flourish_Count>
         <Striking_Flourish>false</Striking_Flourish>
         <Ternary_Flourish>false</Ternary_Flourish>
         <Contradance>false</Contradance>
-        <Saber_Dance>false</Saber_Dance>
+        <Saber_Dance>true</Saber_Dance>
         <Fan_Dance>false</Fan_Dance>
-        <No_Foot_Rise>false</No_Foot_Rise>
-        <Presto_Only>false</Presto_Only>
+        <No_Foot_Rise>true</No_Foot_Rise>
+        <Presto_Only>true</Presto_Only>
         <Presto_Quickstep>false</Presto_Quickstep>
         <Presto_Stutter_Step>false</Presto_Stutter_Step>
         <Presto_Box_Step>false</Presto_Box_Step>
@@ -1385,23 +1392,23 @@
       <None />
     </Main_Job>
     <Sub_Job>
-      <Name />
+      <Name>Warrior</Name>
       <Warrior>
         <Mighty_Strikes>false</Mighty_Strikes>
         <Provoke>false</Provoke>
-        <Berserk>false</Berserk>
+        <Berserk>true</Berserk>
         <Defender>false</Defender>
-        <Warcry>false</Warcry>
-        <Aggressor>false</Aggressor>
+        <Warcry>true</Warcry>
+        <Aggressor>true</Aggressor>
         <Retaliation>false</Retaliation>
         <Warriors_Charge>false</Warriors_Charge>
         <Tomahawk>false</Tomahawk>
         <Restraint>false</Restraint>
         <Blood_Rage>false</Blood_Rage>
         <Brazen_Rush>false</Brazen_Rush>
-        <Berserk_TP>1000</Berserk_TP>
-        <Warcry_TP>1000</Warcry_TP>
-        <Aggressor_TP>1000</Aggressor_TP>
+        <Berserk_TP>500</Berserk_TP>
+        <Warcry_TP>700</Warcry_TP>
+        <Aggressor_TP>800</Aggressor_TP>
         <Blood_Rage_TP>1000</Blood_Rage_TP>
         <Tomahawk_TP>1000</Tomahawk_TP>
         <Warriors_Charge_TP>0</Warriors_Charge_TP>
@@ -1998,9 +2005,12 @@
     <Enable_Medicine>true</Enable_Medicine>
     <Enable_Tools>false</Enable_Tools>
     <Enable_Ammo>false</Enable_Ammo>
-    <Enable_Food>false</Enable_Food>
+    <Enable_Food>true</Enable_Food>
     <Enable_Potions>false</Enable_Potions>
-    <Food_List />
+    <Food_List>
+      <string>Grape Daifuku</string>
+      <string>Grape Daifuku +1</string>
+    </Food_List>
     <MP_Potion_List />
     <HP_Potion_List />
     <MP_Potion_Threshold>0</MP_Potion_Threshold>
@@ -2091,7 +2101,7 @@
     <Enabled>false</Enabled>
     <Dummy_Count>0</Dummy_Count>
     <Base_Count>4</Base_Count>
-    <Total_Song_Count>0</Total_Song_Count>
+    <Total_Song_Count>4</Total_Song_Count>
     <Pianissmo_Dummy>false</Pianissmo_Dummy>
     <Dummy_First>false</Dummy_First>
     <Song_1>
@@ -2255,12 +2265,12 @@
   <Triggers>
     <Trigger_I>
       <Enabled>false</Enabled>
-      <Actor_Type />
+      <Actor_Type>Self</Actor_Type>
       <Actor />
       <Actor_All>false</Actor_All>
-      <Category />
-      <Type />
-      <Action />
+      <Category>Skillchain</Category>
+      <Type>Darkness</Type>
+      <Action>Rudra's Storm</Action>
       <Buff_State />
       <Buff_Time>30</Buff_Time>
       <HP_Enabled>false</HP_Enabled>
@@ -2276,13 +2286,13 @@
       <Chat_Type />
       <Chat_Mode />
       <Chat_Message />
-      <Response_Command />
+      <Response_Command>/equipset 79</Response_Command>
       <Command_Pause>2</Command_Pause>
-      <Response_Category />
+      <Response_Category>Script</Response_Category>
       <Response_Type />
       <Response_Action />
       <Response_Target_Type />
-      <Response_Target />
+      <Response_Target>Self</Response_Target>
       <Delay>0</Delay>
       <Time_Out>5</Time_Out>
       <Reset_Enable>true</Reset_Enable>
@@ -2348,13 +2358,13 @@
       <Warning_Name_End />
     </Trigger_I>
     <Trigger_II>
-      <Enabled>false</Enabled>
-      <Actor_Type />
+      <Enabled>true</Enabled>
+      <Actor_Type>Enemy</Actor_Type>
       <Actor />
-      <Actor_All>false</Actor_All>
-      <Category />
-      <Type />
-      <Action />
+      <Actor_All>true</Actor_All>
+      <Category>Abilities</Category>
+      <Type>Enemy TP</Type>
+      <Action>Primordial Surge</Action>
       <Buff_State />
       <Buff_Time>30</Buff_Time>
       <HP_Enabled>false</HP_Enabled>
@@ -2372,13 +2382,13 @@
       <Chat_Message />
       <Response_Command />
       <Command_Pause>2</Command_Pause>
-      <Response_Category />
+      <Response_Category>Silmaril</Response_Category>
       <Response_Type />
       <Response_Action />
       <Response_Target_Type />
       <Response_Target />
       <Delay>0</Delay>
-      <Time_Out>5</Time_Out>
+      <Time_Out>9.25</Time_Out>
       <Reset_Enable>true</Reset_Enable>
       <Reset>10</Reset>
       <Enable_Lock_On>false</Enable_Lock_On>
@@ -2401,14 +2411,14 @@
         <Auto_Distance>false</Auto_Distance>
         <Engage>false</Engage>
         <Disengage>false</Disengage>
-        <Run>false</Run>
+        <Run>true</Run>
         <Allow_Interruptions>false</Allow_Interruptions>
         <Face_Toward>false</Face_Toward>
-        <Face_Away>false</Face_Away>
+        <Face_Away>true</Face_Away>
         <Lockon>false</Lockon>
         <Lockoff>false</Lockoff>
-        <Max_Distance>5</Max_Distance>
-        <Min_Distance>0</Min_Distance>
+        <Max_Distance>16.5</Max_Distance>
+        <Min_Distance>11.5</Min_Distance>
         <Position>
           <Enabled>false</Enabled>
           <All_Enemies>true</All_Enemies>
@@ -2818,13 +2828,13 @@
       <Warning_Name_End />
     </Trigger_VI>
     <Trigger_VII>
-      <Enabled>false</Enabled>
-      <Actor_Type />
+      <Enabled>true</Enabled>
+      <Actor_Type>Enemy</Actor_Type>
       <Actor />
-      <Actor_All>false</Actor_All>
-      <Category />
-      <Type />
-      <Action />
+      <Actor_All>true</Actor_All>
+      <Category>Abilities</Category>
+      <Type>Enemy TP</Type>
+      <Action>Primordial Surge</Action>
       <Buff_State />
       <Buff_Time>30</Buff_Time>
       <HP_Enabled>false</HP_Enabled>
@@ -2842,13 +2852,13 @@
       <Chat_Message />
       <Response_Command />
       <Command_Pause>2</Command_Pause>
-      <Response_Category />
+      <Response_Category>Silmaril</Response_Category>
       <Response_Type />
       <Response_Action />
       <Response_Target_Type />
       <Response_Target />
       <Delay>0</Delay>
-      <Time_Out>5</Time_Out>
+      <Time_Out>9.25</Time_Out>
       <Reset_Enable>true</Reset_Enable>
       <Reset>10</Reset>
       <Enable_Lock_On>false</Enable_Lock_On>
@@ -2871,14 +2881,14 @@
         <Auto_Distance>false</Auto_Distance>
         <Engage>false</Engage>
         <Disengage>false</Disengage>
-        <Run>false</Run>
+        <Run>true</Run>
         <Allow_Interruptions>false</Allow_Interruptions>
         <Face_Toward>false</Face_Toward>
-        <Face_Away>false</Face_Away>
+        <Face_Away>true</Face_Away>
         <Lockon>false</Lockon>
         <Lockoff>false</Lockoff>
-        <Max_Distance>5</Max_Distance>
-        <Min_Distance>0</Min_Distance>
+        <Max_Distance>16.5</Max_Distance>
+        <Min_Distance>11.5</Min_Distance>
         <Position>
           <Enabled>false</Enabled>
           <All_Enemies>true</All_Enemies>

@@ -20,13 +20,16 @@
       <string>Trigger #2</string>
       <string>Trigger #5</string>
       <string>Songs</string>
+      <string>Weaponskills</string>
+      <string>Follow</string>
+      <string>Combat</string>
     </Priority_Rank>
   </Priority>
   <Fighting>
     <Combat_Action>
       <Combat>
-        <Name>Zazuzen</Name>
-        <Enabled>false</Enabled>
+        <Name>Mimiho</Name>
+        <Enabled>true</Enabled>
         <Auto_Distance>false</Auto_Distance>
         <Engage>true</Engage>
         <Disengage>false</Disengage>
@@ -37,7 +40,7 @@
         <Lockon>false</Lockon>
         <Lockoff>false</Lockoff>
         <Max_Distance>2.25</Max_Distance>
-        <Min_Distance>0</Min_Distance>
+        <Min_Distance>0.25</Min_Distance>
         <Position>
           <Enabled>false</Enabled>
           <All_Enemies>true</All_Enemies>
@@ -248,7 +251,7 @@
       </Shooting>
     </Combat_Action>
     <Weaponskills>
-      <Enabled>false</Enabled>
+      <Enabled>true</Enabled>
       <Enable_Enemy_HP>false</Enable_Enemy_HP>
       <MP_Limit>false</MP_Limit>
       <WeaponType>Sword</WeaponType>
@@ -260,7 +263,7 @@
       <Target />
       <Script />
       <Command_Pause>2</Command_Pause>
-      <TP_Threshold>3000</TP_Threshold>
+      <TP_Threshold>1000</TP_Threshold>
       <High_MP_Threshold>100</High_MP_Threshold>
       <Low_MP_Threshold>0</Low_MP_Threshold>
       <High_HP_Threshold>100</High_HP_Threshold>
@@ -273,12 +276,12 @@
     </Weaponskills>
     <Movement>
       <Follow>
-        <Enabled>false</Enabled>
+        <Enabled>true</Enabled>
         <Face_Toward>false</Face_Toward>
         <Face_Away>false</Face_Away>
         <Face_Same_Direction>false</Face_Same_Direction>
         <Face_Opposite_Direction>false</Face_Opposite_Direction>
-        <Name>Mimiao</Name>
+        <Name>Zazuzen</Name>
         <Max_Distance>1.25</Max_Distance>
         <Min_Distance>0.25</Min_Distance>
       </Follow>
@@ -2232,11 +2235,11 @@
     <Pianissmo_Dummy>false</Pianissmo_Dummy>
     <Dummy_First>false</Dummy_First>
     <Song_1>
-      <Name>Valor Minuet III</Name>
+      <Name>Victory March</Name>
       <Target />
-      <Buff>Minuet</Buff>
+      <Buff>March</Buff>
       <Buff2 />
-      <ID>396</ID>
+      <ID>420</ID>
     </Song_1>
     <Song_2>
       <Name>Valor Minuet IV</Name>
@@ -2379,8 +2382,8 @@
     <NiTro_Warning_Message>Intergalactic Bound!</NiTro_Warning_Message>
     <NiTro_Warning_Time>10</NiTro_Warning_Time>
     <NiTro_Range>10</NiTro_Range>
-    <NiTro_Players>2</NiTro_Players>
-    <Pause_Clarion_Call>true</Pause_Clarion_Call>
+    <NiTro_Players>5</NiTro_Players>
+    <Pause_Clarion_Call>false</Pause_Clarion_Call>
   </Songs>
   <Scripts>
     <On_Load />

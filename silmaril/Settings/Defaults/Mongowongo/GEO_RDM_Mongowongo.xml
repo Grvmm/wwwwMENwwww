@@ -21,6 +21,7 @@
       <string>Cure</string>
       <string>Enhancing (High Priority)</string>
       <string>Follow</string>
+      <string>Magic Burst #1</string>
     </Priority_Rank>
   </Priority>
   <Fighting>
@@ -372,7 +373,7 @@
     </Skillchains>
     <Burst>
       <Burst_I>
-        <Enabled>false</Enabled>
+        <Enabled>true</Enabled>
         <MP>20</MP>
         <Time_Out>8</Time_Out>
         <Promote>false</Promote>
@@ -384,10 +385,10 @@
         <High_HP_Threshold>100</High_HP_Threshold>
         <Command />
         <Command_Pause>2</Command_Pause>
-        <Mode />
+        <Mode>Any Element</Mode>
         <Element />
-        <Type />
-        <Tier>0</Tier>
+        <Type>Spell</Type>
+        <Tier>1</Tier>
       </Burst_I>
       <Burst_II>
         <Enabled>false</Enabled>
@@ -2174,7 +2175,7 @@
     <Geo_Check_Enabled>false</Geo_Check_Enabled>
     <Entrust_Target>Arwel</Entrust_Target>
     <Entrust_Assist />
-    <Entrust_Check_Enabled>false</Entrust_Check_Enabled>
+    <Entrust_Check_Enabled>true</Entrust_Check_Enabled>
     <Geo_Offset>0</Geo_Offset>
     <Geo_Position />
   </Geomancy>

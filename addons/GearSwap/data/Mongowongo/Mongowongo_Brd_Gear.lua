@@ -225,7 +225,7 @@ function init_gear_sets()
 	sets.midcast.FastRecast = {}
 
 	-- Gear to enhance certain classes of songs
-	sets.midcast.Ballad = {legs="Fili Rhingrave +2",range="Blurred harp +1"} 
+	sets.midcast.Ballad = {legs="Fili Rhingrave +2",range="Gjallarhorn"} 
     sets.midcast.Lullaby = {
 		main={ name="Kali", augments={'Mag Acc.+15','String instrument skill +10','Wind instrument skill +10',}},
 		range="Daurdabla",

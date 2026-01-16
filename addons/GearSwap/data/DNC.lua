@@ -179,7 +179,7 @@ function job_post_precast(spell, spellMap, eventArgs)
 		local wsacc = check_ws_acc()
 		
 		if (WSset.ear1 == "Moonshade Earring" or WSset.ear2 == "Moonshade Earring") then
-			-- Replace Moonshade Earring if we're at cap TP, changed to 2200 to account for DNC TP bonus and don't care past this
+			-- Replace Moonshade Earring if we're at cap TP, changed to 3250 1k + 250 
 			if get_effective_player_tp(spell, WSset) > 3250 then
 				if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and sets.AccMaxTP then
 					equip(sets.AccMaxTP[spell.english] or sets.AccMaxTP)

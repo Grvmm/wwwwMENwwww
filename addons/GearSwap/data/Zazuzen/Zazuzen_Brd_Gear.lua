@@ -1,12 +1,5 @@
 function user_job_setup()
 
-	-- Select sub wepon based on subjob so I don't have to remember to hit a button to dual wield
-	if player.sub_job == 'DNC' then
-		gear.subclass = { name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}}
-	else
-		gear.subclass = { name="Ammurapi Shield"} --{ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}} --{ name="Ammurapi Shield"}
-	end
-
 	-- Options: Override default values
     state.OffenseMode:options('Normal','Acc')
     state.CastingMode:options('Normal','Resistant','AoE')
@@ -503,6 +496,8 @@ function init_gear_sets()
 	-- TODO: Check how to manage gear based on TP and HASTE levels, EX: Max store TP until 1k unless AM3 is down then until 3k and swap to White after 1k
 	
 	sets.engaged = {
+		main="Twashtar",
+    	sub="Centovente",
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+3','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
@@ -518,6 +513,8 @@ function init_gear_sets()
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	sets.engaged.Acc = {
+		main="Twashtar",
+    	sub="Centovente",
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+3','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
@@ -533,6 +530,8 @@ function init_gear_sets()
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	sets.engaged.DW = {
+		main="Twashtar",
+    	sub="Centovente",
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+3','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
@@ -548,6 +547,8 @@ function init_gear_sets()
 		back={ name="Intarabus's Cape", augments={'DEX+20','Accuracy+20 Attack+20','DEX+10','"Dbl.Atk."+10','Damage taken-5%',}},
 	}
 	sets.engaged.DW.Acc = {
+		main="Twashtar",
+    	sub="Centovente",
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+3','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
@@ -565,13 +566,17 @@ function init_gear_sets()
 end
 
 -- Select default macro book on initial load or subjob change.
+-- Select sub wepon based on subjob so I don't have to remember to hit a button to dual wield
 function select_default_macro_book()
 	-- Default macro set/book
     if player.sub_job == 'DNC' then
         set_macro_page(2, 2)
+		gear.subclass = { name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}}
     elseif player.sub_job == 'WHM' then
         set_macro_page(2, 1)
+		gear.subclass = { name="Ammurapi Shield"} --{ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}} --{ name="Ammurapi Shield"}
     else
         set_macro_page(2, 2)
+		gear.subclass = { name="Ammurapi Shield"} --{ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}} --{ name="Ammurapi Shield"}
     end
 end

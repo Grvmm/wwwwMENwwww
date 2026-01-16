@@ -129,7 +129,7 @@ function init_gear_sets()
 		head={ name="Nyame Helm", augments={'Path: B',}},
         neck={ name="Etoile Gorget +2", augments={'Path: A',}},
         -- Ears are probably also set by MaxTP sets below
-        left_ear="Ishvara Earring",
+        left_ear="Moonshade Earring",
         right_ear="Maculele Earring",
         body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
@@ -199,10 +199,10 @@ function init_gear_sets()
 
     sets.precast.WS['Aeolian Edge'].TH = set_combine(sets.precast.WS['Aeolian Edge'], sets.TreasureHunter)
 
-	-- Swap to these on Moonshade using WS if not between 1750 and 2000 TP
+	-- Swap to these instead of Moonshade if over 2k TP
 	sets.MaxTP = {
         left_ear="Ishvara Earring",
-        right_ear="Mache Earring"
+        right_ear="Maculele Earring",
     }
 	sets.AccMaxTP = {left_ear="Assuage Earring",right_ear="Telos Earring"}
 	
