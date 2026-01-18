@@ -14,18 +14,17 @@
       <string>Trigger #5</string>
       <string>Follow</string>
       <string>Weaponskills</string>
-      <string>Combat</string>
-      <string>Fighting</string>
       <string>Dispelling</string>
       <string>Enfeebling (High Priority)</string>
       <string>Enfeebling (Normal Priority)</string>
+      <string>Enhancing (High Priority)</string>
     </Priority_Rank>
   </Priority>
   <Fighting>
     <Combat_Action>
       <Combat>
         <Name />
-        <Enabled>true</Enabled>
+        <Enabled>false</Enabled>
         <Auto_Distance>false</Auto_Distance>
         <Engage>true</Engage>
         <Disengage>false</Disengage>
@@ -278,8 +277,8 @@
         <Face_Same_Direction>false</Face_Same_Direction>
         <Face_Opposite_Direction>false</Face_Opposite_Direction>
         <Name>Zazuzen</Name>
-        <Max_Distance>1</Max_Distance>
-        <Min_Distance>0</Min_Distance>
+        <Max_Distance>7.5</Max_Distance>
+        <Min_Distance>6.5</Min_Distance>
       </Follow>
       <Fast_Follow>
         <Face>false</Face>
@@ -492,7 +491,7 @@
       <Impact_Burst>false</Impact_Burst>
     </Burst>
     <Offense>
-      <Enabled>true</Enabled>
+      <Enabled>false</Enabled>
       <Validate_IDs>true</Validate_IDs>
       <Smart_Target>true</Smart_Target>
       <Target_Lockon>false</Target_Lockon>
@@ -502,7 +501,7 @@
       <Player>Zazuzen</Player>
       <Movement>Player</Movement>
       <Enemy_Count>1</Enemy_Count>
-      <Enemy_Distance>10</Enemy_Distance>
+      <Enemy_Distance>6.5</Enemy_Distance>
       <Enemy_Elevation>10</Enemy_Elevation>
       <Claim_Timeout>15</Claim_Timeout>
       <Claim_Delay>1</Claim_Delay>
@@ -874,13 +873,13 @@
     <Low_Priority />
   </Enfeebling>
   <Enhancing>
-    <High_Enable>false</High_Enable>
+    <High_Enable>true</High_Enable>
     <Normal_Enable>false</Normal_Enable>
     <Low_Enable>false</Low_Enable>
-    <Rebuff>false</Rebuff>
-    <Rebuff_Time>0</Rebuff_Time>
+    <Rebuff>true</Rebuff>
+    <Rebuff_Time>2</Rebuff_Time>
     <Enhancing_Player>
-      <Utsusemi>false</Utsusemi>
+      <Utsusemi>true</Utsusemi>
       <Crusade>false</Crusade>
       <Reraise>false</Reraise>
       <Blink>false</Blink>
@@ -927,7 +926,9 @@
       <En_Light>false</En_Light>
     </Enhancing_Player>
     <Enhancing_List />
-    <High_Priority />
+    <High_Priority>
+      <string>Utsusemi</string>
+    </High_Priority>
     <Normal_Priority />
     <Low_Priority />
   </Enhancing>
@@ -2376,9 +2377,9 @@
       <Buff2 />
       <ID>0</ID>
     </Pianissimo_10>
-    <Rebuff_Time>70</Rebuff_Time>
+    <Rebuff_Time>60</Rebuff_Time>
     <Marcato>Honor March</Marcato>
-    <NiTro_Recast>2</NiTro_Recast>
+    <NiTro_Recast>1</NiTro_Recast>
     <NiTro_Warning_Type>Party</NiTro_Warning_Type>
     <NiTro_Warning_Name />
     <NiTro_Warning_Message>Intergalactic Bound!</NiTro_Warning_Message>
