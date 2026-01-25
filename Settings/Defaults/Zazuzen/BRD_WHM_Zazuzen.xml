@@ -10,6 +10,12 @@
       <string>Curing Waltz</string>
       <string>Divine Waltz</string>
       <string>Songs</string>
+      <string>Dispelling</string>
+      <string>Enfeebling (High Priority)</string>
+      <string>Enfeebling (Normal Priority)</string>
+      <string>Enfeebling (Low Priority)</string>
+      <string>Debuff (High Priority)</string>
+      <string>Debuff (Normal Priority)</string>
     </Priority_Rank>
   </Priority>
   <Fighting>
@@ -633,22 +639,48 @@
     </Blue_Healing_AoE>
   </Healing>
   <Debuff>
-    <High_Enable>false</High_Enable>
-    <Normal_Enable>false</Normal_Enable>
+    <High_Enable>true</High_Enable>
+    <Normal_Enable>true</Normal_Enable>
     <Low_Enable>false</Low_Enable>
-    <Party>false</Party>
+    <Party>true</Party>
     <Alliance>false</Alliance>
     <Debuff_List />
-    <High_Priority />
-    <Normal_Priority />
+    <High_Priority>
+      <string>Doom</string>
+      <string>Charm</string>
+      <string>Silence</string>
+      <string>Sleep</string>
+      <string>Lullaby</string>
+      <string>Curse</string>
+      <string>Petrification</string>
+      <string>Max HP Down</string>
+      <string>Bind</string>
+      <string>Paralysis</string>
+    </High_Priority>
+    <Normal_Priority>
+      <string>Slow</string>
+      <string>Elegy</string>
+      <string>Amnesia</string>
+      <string>Helix</string>
+      <string>Poison</string>
+      <string>Blindness</string>
+      <string>Disease</string>
+      <string>Weight</string>
+      <string>Addle</string>
+      <string>Plague</string>
+      <string>Dia</string>
+      <string>Bio</string>
+      <string>Max MP Down</string>
+      <string>Max TP Down</string>
+    </Normal_Priority>
     <Low_Priority />
   </Debuff>
   <Enfeebling>
-    <Dispelling_Enable>false</Dispelling_Enable>
-    <Mode />
+    <Dispelling_Enable>true</Dispelling_Enable>
+    <Mode>Party Assist</Mode>
     <Assist />
-    <Targeting_Mode />
-    <Priority_Mode />
+    <Targeting_Mode>Any</Targeting_Mode>
+    <Priority_Mode>Free</Priority_Mode>
     <Enemy_Count>1</Enemy_Count>
     <Claim_Delay>1</Claim_Delay>
     <Distance>21</Distance>
@@ -661,11 +693,11 @@
     <Dispel_AoE>false</Dispel_AoE>
     <Dia_AoE>false</Dia_AoE>
     <Break_AoE>false</Break_AoE>
-    <Sleep_AoE>false</Sleep_AoE>
+    <Sleep_AoE>true</Sleep_AoE>
     <Poison_AoE>false</Poison_AoE>
-    <High_Enable>false</High_Enable>
-    <Normal_Enable>false</Normal_Enable>
-    <Low_Enable>false</Low_Enable>
+    <High_Enable>true</High_Enable>
+    <Normal_Enable>true</Normal_Enable>
+    <Low_Enable>true</Low_Enable>
     <Default_List>
       <Enemy_Enfeebling>
         <Name>All Enemies</Name>
@@ -692,9 +724,9 @@
         <Burn>false</Burn>
         <Drown>false</Drown>
         <Elegy>false</Elegy>
-        <Nocturne>false</Nocturne>
+        <Nocturne>true</Nocturne>
         <Requiem>false</Requiem>
-        <Threnody>false</Threnody>
+        <Threnody>true</Threnody>
         <Attack_Down>false</Attack_Down>
         <Inhibit_TP>false</Inhibit_TP>
         <Fire_Threnody>false</Fire_Threnody>
@@ -703,22 +735,22 @@
         <Earth_Threnody>false</Earth_Threnody>
         <Ltng_Threnody>false</Ltng_Threnody>
         <Water_Threnody>false</Water_Threnody>
-        <Light_Threnody>false</Light_Threnody>
+        <Light_Threnody>true</Light_Threnody>
         <Dark_Threnody>false</Dark_Threnody>
-        <Protect>false</Protect>
-        <Shell>false</Shell>
+        <Protect>true</Protect>
+        <Shell>true</Shell>
         <Haste>false</Haste>
-        <Spikes>false</Spikes>
-        <Warcry>false</Warcry>
+        <Spikes>true</Spikes>
+        <Warcry>true</Warcry>
         <Enspell>false</Enspell>
-        <Phalanx>false</Phalanx>
-        <Stoneskin>false</Stoneskin>
+        <Phalanx>true</Phalanx>
+        <Stoneskin>true</Stoneskin>
         <Aquaveil>false</Aquaveil>
         <Regen>false</Regen>
         <Accuracy_Boost>false</Accuracy_Boost>
-        <Attack_Boost>false</Attack_Boost>
-        <Evasion_Boost>false</Evasion_Boost>
-        <Defense_Boost>false</Defense_Boost>
+        <Attack_Boost>true</Attack_Boost>
+        <Evasion_Boost>true</Evasion_Boost>
+        <Defense_Boost>true</Defense_Boost>
         <Magic_Atk_Boost>false</Magic_Atk_Boost>
         <Magic_Def_Boost>false</Magic_Def_Boost>
         <Magic_Acc_Boost>false</Magic_Acc_Boost>
@@ -733,9 +765,40 @@
     <Priority_List />
     <Black_List />
     <White_List />
-    <High_Priority />
-    <Normal_Priority />
-    <Low_Priority />
+    <High_Priority>
+      <string>Slow</string>
+      <string>Paralyze</string>
+      <string>Silence</string>
+      <string>Elegy</string>
+      <string>Nocturne</string>
+      <string>Addle</string>
+      <string>Dia</string>
+      <string>Bio</string>
+      <string>Threnody</string>
+      <string>Sleep</string>
+    </High_Priority>
+    <Normal_Priority>
+      <string>Distract</string>
+      <string>Frazzle</string>
+      <string>Gravity</string>
+      <string>Bind</string>
+      <string>Blind</string>
+      <string>Break</string>
+      <string>TP Inhibit</string>
+      <string>Attack Down</string>
+      <string>Requiem</string>
+    </Normal_Priority>
+    <Low_Priority>
+      <string>Poison</string>
+      <string>Flash</string>
+      <string>Inundation</string>
+      <string>Shock</string>
+      <string>Rasp</string>
+      <string>Choke</string>
+      <string>Frost</string>
+      <string>Burn</string>
+      <string>Drown</string>
+    </Low_Priority>
   </Enfeebling>
   <Enhancing>
     <High_Enable>false</High_Enable>
@@ -1391,7 +1454,7 @@
       <None />
     </Main_Job>
     <Sub_Job>
-      <Name>Dancer</Name>
+      <Name>White Mage</Name>
       <Warrior>
         <Mighty_Strikes>false</Mighty_Strikes>
         <Provoke>false</Provoke>
@@ -1432,7 +1495,7 @@
       <White_Mage>
         <Benediction>false</Benediction>
         <Divine_Seal>false</Divine_Seal>
-        <Afflatus_Solace>false</Afflatus_Solace>
+        <Afflatus_Solace>true</Afflatus_Solace>
         <Afflatus_Misery>false</Afflatus_Misery>
         <Martyr>false</Martyr>
         <Martyr_HP>0</Martyr_HP>
@@ -1440,7 +1503,7 @@
         <Devotion>false</Devotion>
         <Devotion_MP>0</Devotion_MP>
         <Devotion_Target />
-        <Divine_Caress>false</Divine_Caress>
+        <Divine_Caress>true</Divine_Caress>
         <Sacrosanctity>false</Sacrosanctity>
         <Asylum>false</Asylum>
       </White_Mage>
@@ -2174,36 +2237,36 @@
       <Name>Mage's Ballad III</Name>
       <Target>Mimiao</Target>
       <Buff>Ballad</Buff>
-      <Buff2>Any</Buff2>
+      <Buff2 />
       <ID>388</ID>
     </Pianissimo_1>
     <Pianissimo_2>
       <Name>Knight's Minne V</Name>
       <Target>Mongowongo</Target>
       <Buff>Minne</Buff>
-      <Buff2>Any</Buff2>
+      <Buff2 />
       <ID>393</ID>
     </Pianissimo_2>
     <Pianissimo_3>
-      <Name />
-      <Target />
-      <Buff />
+      <Name>Mage's Ballad II</Name>
+      <Target>Mimiao</Target>
+      <Buff>Ballad</Buff>
       <Buff2 />
-      <ID>0</ID>
+      <ID>387</ID>
     </Pianissimo_3>
     <Pianissimo_4>
-      <Name />
-      <Target />
-      <Buff />
+      <Name>Mage's Ballad III</Name>
+      <Target>Saiizo</Target>
+      <Buff>Ballad</Buff>
       <Buff2 />
-      <ID>0</ID>
+      <ID>388</ID>
     </Pianissimo_4>
     <Pianissimo_5>
-      <Name />
-      <Target />
-      <Buff />
+      <Name>Knight's Minne V</Name>
+      <Target>Saiizo</Target>
+      <Buff>Minne</Buff>
       <Buff2 />
-      <ID>0</ID>
+      <ID>393</ID>
     </Pianissimo_5>
     <Pianissimo_6>
       <Name />
@@ -2242,10 +2305,10 @@
     </Pianissimo_10>
     <Rebuff_Time>60</Rebuff_Time>
     <Marcato>Honor March</Marcato>
-    <NiTro_Recast>1.5</NiTro_Recast>
-    <NiTro_Warning_Type>Echo Party</NiTro_Warning_Type>
+    <NiTro_Recast>8</NiTro_Recast>
+    <NiTro_Warning_Type>Party</NiTro_Warning_Type>
     <NiTro_Warning_Name />
-    <NiTro_Warning_Message>Miku-Miki-BEAM!</NiTro_Warning_Message>
+    <NiTro_Warning_Message>Miku-Miku-BEAM!</NiTro_Warning_Message>
     <NiTro_Warning_Time>10</NiTro_Warning_Time>
     <NiTro_Range>10</NiTro_Range>
     <NiTro_Players>5</NiTro_Players>

@@ -60,7 +60,9 @@ function init_gear_sets()
     
     -- Precast sets to enhance JAs
 
-    sets.precast.JA['No Foot Rise'] = {} --body="Horos Casaque +1"
+    sets.precast.JA['No Foot Rise'] = {
+        body="Horos Casaque +1",
+    }
 
     sets.precast.JA['Trance'] = {} --head="Horos Tiara +1"
     
@@ -134,8 +136,9 @@ function init_gear_sets()
         ammo="Knobkierrie",
 		head={ name="Nyame Helm", augments={'Path: B',}},
         neck={ name="Etoile Gorget +2", augments={'Path: A',}},
-        -- Ears are probably also set by MaxTP sets below
-        left_ear="Moonshade Earring",
+        -- Ears are probably also set by MaxTP sets below  (disabled since 1k slams are just more damage anyways)
+        -- left_ear="Moonshade Earring",
+        left_ear="Ishvara Earring",
         right_ear="Maculele Earring",
         body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},

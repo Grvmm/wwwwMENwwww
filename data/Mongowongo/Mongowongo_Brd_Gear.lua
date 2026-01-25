@@ -300,7 +300,7 @@ function init_gear_sets()
 		body="Brioso Justau. +2",
 		hands="Fili Manchettes +2",
 		legs="Inyanga Shalwar +2",
-		feet="Brioso Slippers +3",
+		feet="Brioso Slippers +1",
 		neck="Mnbw. Whistle +1",
 		waist="Luminary Sash",
 		left_ear="Halasz Earring",

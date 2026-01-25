@@ -9,7 +9,6 @@
       <string>Cura</string>
       <string>Curing Waltz</string>
       <string>Divine Waltz</string>
-      <string>Songs</string>
       <string>Trigger #2</string>
       <string>Trigger #3</string>
       <string>Trigger #4</string>
@@ -17,7 +16,6 @@
       <string>Trigger #6</string>
       <string>Weaponskills</string>
       <string>Combat</string>
-      <string>Follow</string>
       <string>Fighting</string>
     </Priority_Rank>
   </Priority>
@@ -272,7 +270,7 @@
     </Weaponskills>
     <Movement>
       <Follow>
-        <Enabled>true</Enabled>
+        <Enabled>false</Enabled>
         <Face_Toward>false</Face_Toward>
         <Face_Away>false</Face_Away>
         <Face_Same_Direction>false</Face_Same_Direction>
@@ -654,23 +652,23 @@
   </Debuff>
   <Enfeebling>
     <Dispelling_Enable>false</Dispelling_Enable>
-    <Mode />
+    <Mode>Party Assist</Mode>
     <Assist />
-    <Targeting_Mode />
-    <Priority_Mode />
+    <Targeting_Mode>Any</Targeting_Mode>
+    <Priority_Mode>Free</Priority_Mode>
     <Enemy_Count>1</Enemy_Count>
     <Claim_Delay>1</Claim_Delay>
     <Distance>21</Distance>
     <Elevation>10</Elevation>
     <Smart_Target>false</Smart_Target>
-    <Pause_Weakened>false</Pause_Weakened>
+    <Pause_Weakened>true</Pause_Weakened>
     <Validate_IDs>false</Validate_IDs>
     <Immuno_Mode>false</Immuno_Mode>
     <Immuno_Count>6</Immuno_Count>
     <Dispel_AoE>false</Dispel_AoE>
     <Dia_AoE>false</Dia_AoE>
     <Break_AoE>false</Break_AoE>
-    <Sleep_AoE>false</Sleep_AoE>
+    <Sleep_AoE>true</Sleep_AoE>
     <Poison_AoE>false</Poison_AoE>
     <High_Enable>false</High_Enable>
     <Normal_Enable>false</Normal_Enable>
@@ -701,9 +699,9 @@
         <Burn>false</Burn>
         <Drown>false</Drown>
         <Elegy>false</Elegy>
-        <Nocturne>false</Nocturne>
+        <Nocturne>true</Nocturne>
         <Requiem>false</Requiem>
-        <Threnody>false</Threnody>
+        <Threnody>true</Threnody>
         <Attack_Down>false</Attack_Down>
         <Inhibit_TP>false</Inhibit_TP>
         <Fire_Threnody>false</Fire_Threnody>
@@ -713,21 +711,21 @@
         <Ltng_Threnody>false</Ltng_Threnody>
         <Water_Threnody>false</Water_Threnody>
         <Light_Threnody>false</Light_Threnody>
-        <Dark_Threnody>false</Dark_Threnody>
-        <Protect>false</Protect>
-        <Shell>false</Shell>
+        <Dark_Threnody>true</Dark_Threnody>
+        <Protect>true</Protect>
+        <Shell>true</Shell>
         <Haste>false</Haste>
-        <Spikes>false</Spikes>
-        <Warcry>false</Warcry>
+        <Spikes>true</Spikes>
+        <Warcry>true</Warcry>
         <Enspell>false</Enspell>
-        <Phalanx>false</Phalanx>
-        <Stoneskin>false</Stoneskin>
+        <Phalanx>true</Phalanx>
+        <Stoneskin>true</Stoneskin>
         <Aquaveil>false</Aquaveil>
         <Regen>false</Regen>
         <Accuracy_Boost>false</Accuracy_Boost>
-        <Attack_Boost>false</Attack_Boost>
-        <Evasion_Boost>false</Evasion_Boost>
-        <Defense_Boost>false</Defense_Boost>
+        <Attack_Boost>true</Attack_Boost>
+        <Evasion_Boost>true</Evasion_Boost>
+        <Defense_Boost>true</Defense_Boost>
         <Magic_Atk_Boost>false</Magic_Atk_Boost>
         <Magic_Def_Boost>false</Magic_Def_Boost>
         <Magic_Acc_Boost>false</Magic_Acc_Boost>
@@ -742,9 +740,31 @@
     <Priority_List />
     <Black_List />
     <White_List />
-    <High_Priority />
-    <Normal_Priority />
-    <Low_Priority />
+    <High_Priority>
+      <string>Sleep</string>
+    </High_Priority>
+    <Normal_Priority>
+      <string>Threnody</string>
+      <string>Elegy</string>
+      <string>Nocturne</string>
+      <string>Requiem</string>
+    </Normal_Priority>
+    <Low_Priority>
+      <string>Poison</string>
+      <string>Flash</string>
+      <string>Inundation</string>
+      <string>Shock</string>
+      <string>Rasp</string>
+      <string>Choke</string>
+      <string>Frost</string>
+      <string>Burn</string>
+      <string>Drown</string>
+      <string>Attack Down</string>
+      <string>Dia</string>
+      <string>Paralyze</string>
+      <string>Silence</string>
+      <string>Slow</string>
+    </Low_Priority>
   </Enfeebling>
   <Enhancing>
     <High_Enable>false</High_Enable>
@@ -1842,7 +1862,7 @@
         <Samba />
         <Maintain_Step_Time>10</Maintain_Step_Time>
         <Build_Step_Time>0</Build_Step_Time>
-        <Flourish_III_WS_Only>false</Flourish_III_WS_Only>
+        <Flourish_III_WS_Only>true</Flourish_III_WS_Only>
         <Quickstep>false</Quickstep>
         <Box_Step>false</Box_Step>
         <Stutter_Step>false</Stutter_Step>
@@ -1851,21 +1871,21 @@
         <Animated_Flourish_Count>0</Animated_Flourish_Count>
         <Desperate_Flourish>false</Desperate_Flourish>
         <Violent_Flourish>false</Violent_Flourish>
-        <Reverse_Flourish>false</Reverse_Flourish>
-        <Reverse_Flourish_Count>0</Reverse_Flourish_Count>
-        <Reverse_Flourish_TP>0</Reverse_Flourish_TP>
+        <Reverse_Flourish>true</Reverse_Flourish>
+        <Reverse_Flourish_Count>5</Reverse_Flourish_Count>
+        <Reverse_Flourish_TP>414</Reverse_Flourish_TP>
         <Building_Flourish>false</Building_Flourish>
         <Building_Flourish_Count>0</Building_Flourish_Count>
         <Building_Flourish_TP>0</Building_Flourish_TP>
         <Wild_Flourish>false</Wild_Flourish>
         <Climactic_Flourish>false</Climactic_Flourish>
-        <Climactic_Flourish_Count>0</Climactic_Flourish_Count>
+        <Climactic_Flourish_Count>1</Climactic_Flourish_Count>
         <Striking_Flourish>false</Striking_Flourish>
         <Ternary_Flourish>false</Ternary_Flourish>
         <Contradance>false</Contradance>
-        <Saber_Dance>false</Saber_Dance>
+        <Saber_Dance>true</Saber_Dance>
         <Fan_Dance>false</Fan_Dance>
-        <No_Foot_Rise>false</No_Foot_Rise>
+        <No_Foot_Rise>true</No_Foot_Rise>
         <Presto_Only>false</Presto_Only>
         <Presto_Quickstep>false</Presto_Quickstep>
         <Presto_Stutter_Step>false</Presto_Stutter_Step>
@@ -2103,7 +2123,7 @@
   </Items>
   <Songs>
     <Ignore_List />
-    <Enabled>true</Enabled>
+    <Enabled>false</Enabled>
     <Dummy_Count>2</Dummy_Count>
     <Base_Count>4</Base_Count>
     <Total_Song_Count>5</Total_Song_Count>
@@ -2180,39 +2200,39 @@
       <ID>378</ID>
     </Dummy_5>
     <Pianissimo_1>
-      <Name />
-      <Target />
-      <Buff />
+      <Name>Mage's Ballad III</Name>
+      <Target>Mimiao</Target>
+      <Buff>Ballad</Buff>
       <Buff2 />
-      <ID>0</ID>
+      <ID>388</ID>
     </Pianissimo_1>
     <Pianissimo_2>
-      <Name />
-      <Target />
-      <Buff />
+      <Name>Mage's Ballad II</Name>
+      <Target>Mimiao</Target>
+      <Buff>Ballad</Buff>
       <Buff2 />
-      <ID>0</ID>
+      <ID>387</ID>
     </Pianissimo_2>
     <Pianissimo_3>
-      <Name />
-      <Target />
-      <Buff />
+      <Name>Mage's Ballad III</Name>
+      <Target>Saiizo</Target>
+      <Buff>Ballad</Buff>
       <Buff2 />
-      <ID>0</ID>
+      <ID>388</ID>
     </Pianissimo_3>
     <Pianissimo_4>
-      <Name />
-      <Target />
-      <Buff />
+      <Name>Knight's Minne V</Name>
+      <Target>Saiizo</Target>
+      <Buff>Minne</Buff>
       <Buff2 />
-      <ID>0</ID>
+      <ID>393</ID>
     </Pianissimo_4>
     <Pianissimo_5>
-      <Name />
-      <Target />
-      <Buff />
+      <Name>Knight's Minne V</Name>
+      <Target>Mongowongo</Target>
+      <Buff>Minne</Buff>
       <Buff2 />
-      <ID>0</ID>
+      <ID>393</ID>
     </Pianissimo_5>
     <Pianissimo_6>
       <Name />
@@ -2251,11 +2271,11 @@
     </Pianissimo_10>
     <Rebuff_Time>60</Rebuff_Time>
     <Marcato>Honor March</Marcato>
-    <NiTro_Recast>1</NiTro_Recast>
-    <NiTro_Warning_Type>Echo Party</NiTro_Warning_Type>
+    <NiTro_Recast>8</NiTro_Recast>
+    <NiTro_Warning_Type>Party</NiTro_Warning_Type>
     <NiTro_Warning_Name />
-    <NiTro_Warning_Message>Miku-Miki-BEAM!</NiTro_Warning_Message>
-    <NiTro_Warning_Time>10</NiTro_Warning_Time>
+    <NiTro_Warning_Message>Miku-Miku-BEAM!</NiTro_Warning_Message>
+    <NiTro_Warning_Time>30</NiTro_Warning_Time>
     <NiTro_Range>10</NiTro_Range>
     <NiTro_Players>5</NiTro_Players>
     <Pause_Clarion_Call>true</Pause_Clarion_Call>

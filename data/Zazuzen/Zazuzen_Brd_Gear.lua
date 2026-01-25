@@ -34,7 +34,10 @@ function init_gear_sets()
 	--------------------------------------
 
 	-- Weapons sets
-	sets.weapons.Aeneas = {main={ name="Carnwenhan", augments={'Path: A',}},sub={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}}}
+	sets.weapons.Aeneas = {
+		main="Naegling",
+		sub="Culminus",
+	}
 	sets.weapons.DualWeapons = {main={ name="Carnwenhan", augments={'Path: A',}},sub={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}}}
 	sets.weapons.DualNaegling = {
 		main="Naegling",
@@ -219,16 +222,18 @@ function init_gear_sets()
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck={ name="Bard's Charm +2", augments={'Path: A',}},
 		waist={ name="Sailfi Belt +1", augments={'Path: A',}},
-		left_ear="Ishvara Earring",
-		right_ear="Telos Earring",
+		left_ear="Moonshade Earring",
+		right_ear="Ishvara Earring",
         left_ring="Epaminondas's Ring",
         right_ring="Cornelia's Ring",
 		back={ name="Intarabus's Cape", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
 	}
 
-	-- Swap to these on Moonshade using WS if at 3000 TP
-	-- TODO: Test these, Need to understand when and if it uses/swaps Moonshade and how to set it to only use if it's useful
-	sets.MaxTP = {left_ear="Ishvara Earring",right_ear="Telos Earring",}
+	-- Swap to these on Moonshade using WS if less than 2k TP
+	sets.MaxTP = {
+		left_ear="Ishvara Earring",
+		right_ear="Telos Earring",
+	}
 	sets.AccMaxTP = {left_ear="Mache Earring +1",right_ear="Telos Earring"}
 
 	-- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
