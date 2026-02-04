@@ -61,7 +61,7 @@ function init_gear_sets()
     -- Precast sets to enhance JAs
 
     sets.precast.JA['No Foot Rise'] = {
-        body="Horos Casaque +1",
+        body="Horos Casaque +3",
     }
 
     sets.precast.JA['Trance'] = {} --head="Horos Tiara +1"
@@ -78,7 +78,11 @@ function init_gear_sets()
     -- Don't need any special gear for Healing Waltz.
     sets.precast.Waltz['Healing Waltz'] = {}
     
-    sets.precast.Samba = {back=gear.stp_jse_back} --head="Maxixi Tiara"
+    sets.precast.Samba = {
+        feet="Macu. Toe Shoes +1",
+        back=gear.stp_jse_back,
+        --head="Maxixi Tiara"
+    }
 
     sets.precast.Jig = {legs="Horos Tights +3"} -- feet="Maxixi Toe Shoes"
 
@@ -117,7 +121,7 @@ function init_gear_sets()
     sets.precast.Flourish3['Climactic Flourish'] = {
         head="Maculele Tiara +3",
         hands="Maculele bangles +3",
-        body="Horos Casaque +3"
+        body="Horos Casaque +3",
     }
 
     -- Fast cast sets for spells
@@ -138,14 +142,14 @@ function init_gear_sets()
         neck={ name="Etoile Gorget +2", augments={'Path: A',}},
         -- Ears are probably also set by MaxTP sets below  (disabled since 1k slams are just more damage anyways)
         -- left_ear="Moonshade Earring",
-        left_ear="Ishvara Earring",
+        left_ear="Moonshade Earring",
         right_ear="Maculele Earring",
         body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
         left_ring="Epaminondas's Ring",
         right_ring="Cornelia's Ring",
         back=gear.wsd_jse_back,
-        waist="Sweordfaetels +1", -- "Grunfeld Rope",
+        waist="Sailfi Belt +1",
         legs={ name="Nyame Flanchard", augments={'Path: B',}},
         feet={ name="Nyame Sollerets", augments={'Path: B',}}
     }
@@ -177,7 +181,7 @@ function init_gear_sets()
     })
 
     -- Specific weaponskill sets.  Uses the base set if an appropriate WSMod version isn't found.
-    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {})
+    sets.precast.WS["Rudra's Storm"] = set_combine(sets.precast.WS, {waist="Kentarch Belt +1",})
     sets.precast.WS["Rudra's Storm"].SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
     sets.precast.WS["Rudra's Storm"].Acc = set_combine(sets.precast.WS.Acc, {})
 	sets.precast.WS["Rudra's Storm"].FullAcc = set_combine(sets.precast.WS.FullAcc, {})
@@ -305,25 +309,32 @@ function init_gear_sets()
         main="Twashtar",
     	sub="Centovente",
         ammo="Aurgelmir Orb +1",
-        head="Malignance chapeau",
+        head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
         neck={ name="Etoile Gorget +2", augments={'Path: A',}},
         left_ear="Sherida Earring",
         right_ear="Telos Earring",
-        body={ name="Herculean Vest", augments={'"Triple Atk."+4','Accuracy+10',}}, --"Malignance Tabard",
-        hands="Malignance Gloves",
+        body="Horos Casaque +3",
+        hands={ name="Adhemar Wrist. +1", augments={'DEX+12','AGI+12','Accuracy+20',}},
         left_ring="Moonlight Ring",
-        right_ring="Moonlight Ring",
+        right_ring="Epona's Ring",
         back=gear.stp_jse_back,
         waist="Windbuffet Belt +1",
         legs="Malignance Tights",
-        feet="Malignance Boots"
+        feet="Horos Toe Shoes +3"
     }
     sets.engaged.DTLite = set_combine(sets.engaged, {})
     sets.engaged.SomeAcc = set_combine(sets.precast.WS.SomeAcc, {})
 	sets.engaged.Acc = set_combine(sets.precast.WS.Acc, {})
     sets.engaged.FullAcc = set_combine(sets.precast.WS.FullAcc, {})
     sets.engaged.Fodder = set_combine(sets.engaged, {})
-    sets.engaged.PDT = set_combine(sets.defense.PDT, {})
+    sets.engaged.PDT = set_combine(sets.defense.PDT, {
+        left_ring="Moonlight Ring",
+        right_ring="Moonlight Ring",
+        waist="Windbuffet Belt +1",
+        neck={ name="Etoile Gorget +2", augments={'Path: A',}},
+        hands= "Malignance Gloves",
+        head="Malignance chapeau",
+    })
     sets.engaged.SomeAcc.PDT = set_combine(sets.defense.PDT, {})
     sets.engaged.Acc.PDT = set_combine(sets.defense.PDT, {})
     sets.engaged.FullAcc.PDT = set_combine(sets.defense.PDT, {})

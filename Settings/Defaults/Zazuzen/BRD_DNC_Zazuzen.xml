@@ -17,6 +17,8 @@
       <string>Weaponskills</string>
       <string>Combat</string>
       <string>Fighting</string>
+      <string>Auto Raising</string>
+      <string>Dispelling</string>
     </Priority_Rank>
   </Priority>
   <Fighting>
@@ -598,7 +600,7 @@
       </Divine_Waltz>
     </Jigs>
     <Raise>
-      <Enabled>false</Enabled>
+      <Enabled>true</Enabled>
       <Raise_I>false</Raise_I>
       <Raise_II>false</Raise_II>
       <Raise_III>false</Raise_III>
@@ -606,8 +608,8 @@
       <MP_Threshold>30</MP_Threshold>
       <Party>false</Party>
       <Alliance>false</Alliance>
-      <Accept_Raise>false</Accept_Raise>
-      <Weakened>false</Weakened>
+      <Accept_Raise>true</Accept_Raise>
+      <Weakened>true</Weakened>
       <Accept_Combat>false</Accept_Combat>
       <Accept_Name />
     </Raise>
@@ -651,7 +653,7 @@
     <Low_Priority />
   </Debuff>
   <Enfeebling>
-    <Dispelling_Enable>false</Dispelling_Enable>
+    <Dispelling_Enable>true</Dispelling_Enable>
     <Mode>Party Assist</Mode>
     <Assist />
     <Targeting_Mode>Any</Targeting_Mode>
@@ -663,8 +665,8 @@
     <Smart_Target>false</Smart_Target>
     <Pause_Weakened>true</Pause_Weakened>
     <Validate_IDs>false</Validate_IDs>
-    <Immuno_Mode>false</Immuno_Mode>
-    <Immuno_Count>6</Immuno_Count>
+    <Immuno_Mode>true</Immuno_Mode>
+    <Immuno_Count>1</Immuno_Count>
     <Dispel_AoE>false</Dispel_AoE>
     <Dia_AoE>false</Dia_AoE>
     <Break_AoE>false</Break_AoE>
@@ -698,8 +700,8 @@
         <Frost>false</Frost>
         <Burn>false</Burn>
         <Drown>false</Drown>
-        <Elegy>false</Elegy>
-        <Nocturne>true</Nocturne>
+        <Elegy>true</Elegy>
+        <Nocturne>false</Nocturne>
         <Requiem>false</Requiem>
         <Threnody>true</Threnody>
         <Attack_Down>false</Attack_Down>
@@ -1864,7 +1866,7 @@
         <Build_Step_Time>0</Build_Step_Time>
         <Flourish_III_WS_Only>true</Flourish_III_WS_Only>
         <Quickstep>false</Quickstep>
-        <Box_Step>false</Box_Step>
+        <Box_Step>true</Box_Step>
         <Stutter_Step>false</Stutter_Step>
         <Feather_Step>false</Feather_Step>
         <Animated_Flourish>false</Animated_Flourish>
@@ -2130,11 +2132,11 @@
     <Pianissmo_Dummy>false</Pianissmo_Dummy>
     <Dummy_First>false</Dummy_First>
     <Song_1>
-      <Name>Valor Minuet III</Name>
+      <Name>Victory March</Name>
       <Target />
-      <Buff>Minuet</Buff>
+      <Buff>March</Buff>
       <Buff2 />
-      <ID>396</ID>
+      <ID>420</ID>
     </Song_1>
     <Song_2>
       <Name>Valor Minuet IV</Name>

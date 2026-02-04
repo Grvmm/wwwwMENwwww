@@ -20,6 +20,7 @@
       <string>Combat</string>
       <string>Fighting</string>
       <string>Auto Raising</string>
+      <string>Dispelling</string>
     </Priority_Rank>
   </Priority>
   <Fighting>
@@ -654,7 +655,7 @@
     <Low_Priority />
   </Debuff>
   <Enfeebling>
-    <Dispelling_Enable>false</Dispelling_Enable>
+    <Dispelling_Enable>true</Dispelling_Enable>
     <Mode>Party Assist</Mode>
     <Assist />
     <Targeting_Mode>Any</Targeting_Mode>
@@ -666,8 +667,8 @@
     <Smart_Target>false</Smart_Target>
     <Pause_Weakened>true</Pause_Weakened>
     <Validate_IDs>false</Validate_IDs>
-    <Immuno_Mode>false</Immuno_Mode>
-    <Immuno_Count>6</Immuno_Count>
+    <Immuno_Mode>true</Immuno_Mode>
+    <Immuno_Count>1</Immuno_Count>
     <Dispel_AoE>false</Dispel_AoE>
     <Dia_AoE>false</Dia_AoE>
     <Break_AoE>false</Break_AoE>
@@ -701,8 +702,8 @@
         <Frost>false</Frost>
         <Burn>false</Burn>
         <Drown>false</Drown>
-        <Elegy>false</Elegy>
-        <Nocturne>true</Nocturne>
+        <Elegy>true</Elegy>
+        <Nocturne>false</Nocturne>
         <Requiem>false</Requiem>
         <Threnody>true</Threnody>
         <Attack_Down>false</Attack_Down>
@@ -1046,7 +1047,7 @@
         </Ready_3>
       </Beastmaster>
       <Bard>
-        <Soul_Voice>true</Soul_Voice>
+        <Soul_Voice>false</Soul_Voice>
         <Pianissimo>false</Pianissimo>
         <Nightingale>true</Nightingale>
         <Troubadour>true</Troubadour>
@@ -2281,7 +2282,7 @@
     <NiTro_Warning_Time>30</NiTro_Warning_Time>
     <NiTro_Range>10</NiTro_Range>
     <NiTro_Players>5</NiTro_Players>
-    <Pause_Clarion_Call>false</Pause_Clarion_Call>
+    <Pause_Clarion_Call>true</Pause_Clarion_Call>
   </Songs>
   <Scripts>
     <On_Load />
