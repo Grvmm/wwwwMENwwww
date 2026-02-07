@@ -17,11 +17,11 @@
       <string>Job Abilities</string>
       <string>Geomancy (Luopan)</string>
       <string>Geomancy (Indi)</string>
-      <string>Geomancy (Entrust)</string>
       <string>Cure</string>
       <string>Enhancing (High Priority)</string>
       <string>Follow</string>
       <string>Magic Burst #1</string>
+      <string>Geomancy (Entrust)</string>
     </Priority_Rank>
   </Priority>
   <Fighting>
@@ -2169,11 +2169,11 @@
     <Enable_Entrust>true</Enable_Entrust>
     <Geo>Geo-Frailty</Geo>
     <Indi>Indi-Fury</Indi>
-    <Entrust>Indi-Precision</Entrust>
+    <Entrust>Indi-Haste</Entrust>
     <Geo_Target />
-    <Geo_Assist>Saiizo</Geo_Assist>
+    <Geo_Assist>Arwel</Geo_Assist>
     <Geo_Check_Enabled>false</Geo_Check_Enabled>
-    <Entrust_Target>Zazuzen</Entrust_Target>
+    <Entrust_Target>Arwel</Entrust_Target>
     <Entrust_Assist />
     <Entrust_Check_Enabled>true</Entrust_Check_Enabled>
     <Geo_Offset>0</Geo_Offset>

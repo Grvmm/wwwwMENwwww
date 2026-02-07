@@ -106,7 +106,7 @@ function init_gear_sets()
 	sets.precast.FC.Lullaby =  {
 		main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
 		sub="Ammurapi Shield",
-		range="Blurred harp +1",
+		range="Marsyas",
 		head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}}, -- Replace with Brioso Roundlet +3 When I get them for magic Acc, also see if this or "Fili Calot +2" is better
 		body="Fili Hongreline +2",
 		hands="Brioso Cuffs +3",
@@ -292,10 +292,10 @@ function init_gear_sets()
     sets.midcast.Lullaby = {
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		sub=gear.subclass,
-		range="Gjallarhorn", 
+		range="Marsyas", 
     	head="Fili Calot +2",
 		body="Fili Hongreline +2",
-		hands="Brioso Cuffs +3", -- TODO: look at either of these are better { name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -2%','Song spellcasting time -5%',}},
+		hands="Brioso Cuffs +3",
     	legs="Fili Rhingrave +2",
 		feet="Brioso Slippers +3",
     	neck="Mnbw. Whistle +1",

@@ -192,8 +192,8 @@ function job_post_precast(spell, spellMap, eventArgs)
 		local wsacc = check_ws_acc()
 		
 		if (WSset.ear1 == "Moonshade Earring" or WSset.ear2 == "Moonshade Earring") then
-			-- Replace Moonshade Earring if we're at cap TP with something from another gear SET: Note set to 2k limit since I need 3k for real for am3 to proc and never need more than 2k for other WS
-			if get_effective_player_tp(spell, WSset) > 2250 then
+			-- Replace Moonshade Earring if we're at cap TP with something from another gear SET
+			if get_effective_player_tp(spell, WSset) > 3250 then
 				if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and sets.AccMaxTP then
 					equip(sets.AccMaxTP[spell.english] or sets.AccMaxTP)
 				elseif sets.MaxTP then
