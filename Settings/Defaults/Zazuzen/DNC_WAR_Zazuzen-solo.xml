@@ -12,6 +12,8 @@
       <string>Fighting</string>
       <string>Debuff (High Priority)</string>
       <string>Debuff (Normal Priority)</string>
+      <string>Curing Waltz</string>
+      <string>Divine Waltz</string>
     </Priority_Rank>
   </Priority>
   <Fighting>
@@ -505,12 +507,14 @@
     </Offense>
   </Fighting>
   <Healing>
-    <Party>false</Party>
+    <Party>true</Party>
     <Alliance>false</Alliance>
-    <Manual_Cure>true</Manual_Cure>
+    <Manual_Cure>false</Manual_Cure>
     <Priority_Enable>false</Priority_Enable>
-    <Priority_Count>0</Priority_Count>
-    <Cure_List />
+    <Priority_Count>1</Priority_Count>
+    <Cure_List>
+      <string>Zazuzen</string>
+    </Cure_List>
     <Spells>
       <Cure>
         <Enabled>false</Enabled>
@@ -565,29 +569,29 @@
     </Spells>
     <Jigs>
       <Curing_Waltz>
-        <Enabled>false</Enabled>
+        <Enabled>true</Enabled>
         <Curing_Waltz_I>60</Curing_Waltz_I>
-        <Curing_Waltz_I_Enabled>false</Curing_Waltz_I_Enabled>
+        <Curing_Waltz_I_Enabled>true</Curing_Waltz_I_Enabled>
         <Curing_Waltz_II>130</Curing_Waltz_II>
-        <Curing_Waltz_II_Enabled>false</Curing_Waltz_II_Enabled>
+        <Curing_Waltz_II_Enabled>true</Curing_Waltz_II_Enabled>
         <Curing_Waltz_III>270</Curing_Waltz_III>
-        <Curing_Waltz_III_Enabled>false</Curing_Waltz_III_Enabled>
+        <Curing_Waltz_III_Enabled>true</Curing_Waltz_III_Enabled>
         <Curing_Waltz_IV>450</Curing_Waltz_IV>
-        <Curing_Waltz_IV_Enabled>false</Curing_Waltz_IV_Enabled>
+        <Curing_Waltz_IV_Enabled>true</Curing_Waltz_IV_Enabled>
         <Curing_Waltz_V>600</Curing_Waltz_V>
-        <Curing_Waltz_V_Enabled>false</Curing_Waltz_V_Enabled>
-        <Threshold>75</Threshold>
+        <Curing_Waltz_V_Enabled>true</Curing_Waltz_V_Enabled>
+        <Threshold>40</Threshold>
         <Priority_Threshold>85</Priority_Threshold>
         <Priority_Promote_Rate>2</Priority_Promote_Rate>
         <Over_Cure>30</Over_Cure>
       </Curing_Waltz>
       <Divine_Waltz>
-        <Enabled>false</Enabled>
+        <Enabled>true</Enabled>
         <Divine_Waltz_I>60</Divine_Waltz_I>
-        <Divine_Waltz_I_Enabled>false</Divine_Waltz_I_Enabled>
+        <Divine_Waltz_I_Enabled>true</Divine_Waltz_I_Enabled>
         <Divine_Waltz_II>280</Divine_Waltz_II>
-        <Divine_Waltz_II_Enabled>false</Divine_Waltz_II_Enabled>
-        <Threshold>80</Threshold>
+        <Divine_Waltz_II_Enabled>true</Divine_Waltz_II_Enabled>
+        <Threshold>60</Threshold>
         <Over_Cure>30</Over_Cure>
         <Targets>3</Targets>
       </Divine_Waltz>
@@ -1305,7 +1309,7 @@
         <Build_Step_Time>5</Build_Step_Time>
         <Flourish_III_WS_Only>true</Flourish_III_WS_Only>
         <Quickstep>false</Quickstep>
-        <Box_Step>true</Box_Step>
+        <Box_Step>false</Box_Step>
         <Stutter_Step>false</Stutter_Step>
         <Feather_Step>false</Feather_Step>
         <Animated_Flourish>false</Animated_Flourish>
@@ -1324,8 +1328,8 @@
         <Striking_Flourish>false</Striking_Flourish>
         <Ternary_Flourish>false</Ternary_Flourish>
         <Contradance>false</Contradance>
-        <Saber_Dance>true</Saber_Dance>
-        <Fan_Dance>false</Fan_Dance>
+        <Saber_Dance>false</Saber_Dance>
+        <Fan_Dance>true</Fan_Dance>
         <No_Foot_Rise>true</No_Foot_Rise>
         <Presto_Only>true</Presto_Only>
         <Presto_Quickstep>false</Presto_Quickstep>
@@ -1458,10 +1462,10 @@
       <Warrior>
         <Mighty_Strikes>false</Mighty_Strikes>
         <Provoke>false</Provoke>
-        <Berserk>true</Berserk>
+        <Berserk>false</Berserk>
         <Defender>false</Defender>
-        <Warcry>true</Warcry>
-        <Aggressor>true</Aggressor>
+        <Warcry>false</Warcry>
+        <Aggressor>false</Aggressor>
         <Retaliation>false</Retaliation>
         <Warriors_Charge>false</Warriors_Charge>
         <Tomahawk>false</Tomahawk>

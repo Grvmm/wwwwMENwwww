@@ -57,11 +57,11 @@ function init_gear_sets()
 		main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}}, -- { name="Nibiru Knife", augments={'MP+50','Mag. Evasion+20','"Fast Cast"+5',}},
 		sub="Ammurapi Shield",
 		head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
-		body="Zendik Robe",
+		body="Inyanga Jubbah +2",
 		hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -2%','Song spellcasting time -5%',}},
 		legs="Aya. Cosciales +2",
 		feet="Navon Crackows",
-		neck="Rep. Plat. Medal",
+		neck="Deviant Necklace",
 		waist="Embla Sash",
 		left_ear="Halasz Earring",
 		right_ear="Enchntr. Earring +1",
@@ -70,15 +70,11 @@ function init_gear_sets()
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','CHR+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 	}
 	sets.precast.FC.Cure = set_combine(sets.precast.FC, {
-		head="Kaykaus Mitra +1", 
-		body="Kaykaus Bliaut +1",
   		hands="Kaykaus Cuffs +1",
-		legs="Gyve Trousers",
-  		feet="Kaykaus Boots +1",
+ 	    feet={ name="Vanya Clogs", augments={'"Cure" potency +5%','"Cure" spellcasting time -15%','"Conserve MP"+6',}},
     	neck="Deviant Necklace",
- 		waist="Luminary Sash",
 	    right_ear="Mendi. Earring",
-	    left_ring="Defending Ring",
+	    left_ring="Moonlight Ring",
 		right_ring="Kishar Ring",
 	})
 	sets.precast.FC['Enhancing Magic'] = set_combine(sets.precast.FC, {waist="Siegel Sash"})
@@ -87,16 +83,16 @@ function init_gear_sets()
 		main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
 		sub="Ammurapi Shield",
 		head="Fili Calot +2",
-		body="Zendik Robe",
+		body="Brioso justaucorps +3",
 		hands={ name="Gende. Gages +1", augments={'Phys. dmg. taken -3%','Magic dmg. taken -2%','Song spellcasting time -5%',}},
 		legs="Aya. Cosciales +2",
 		feet={ name="Telchine Pigaches", augments={'Song spellcasting time -7%',}},
-		neck="Aoidos' Matinee",
+		neck="Deviant Necklace",
 		waist="Embla Sash",
 		left_ear="Halasz Earring",
 		right_ear="Enchntr. Earring +1",
-		left_ring="Kishar Ring",
-		right_ring="Defending Ring",
+		left_ring="Moonlight Ring",
+		right_ring="Kishar Ring",
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','CHR+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 	}
 	-- TODO: Update with CHA gear
@@ -108,15 +104,15 @@ function init_gear_sets()
 		sub="Ammurapi Shield",
 		range="Marsyas",
 		head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}}, -- Replace with Brioso Roundlet +3 When I get them for magic Acc, also see if this or "Fili Calot +2" is better
-		body="Fili Hongreline +2",
+		body="Brioso justaucorps +3",
 		hands="Brioso Cuffs +3",
 		legs="Fili Rhingrave +2",
 		feet="Brioso Slippers +3",
-		neck="Mnbw. Whistle +1",
-		waist="Embla Sash", 
+		neck="Deviant Necklace",
+		waist="Embla Sash",
 		left_ear="Halasz Earring",
 		right_ear="Enchntr. Earring +1",
-		left_ring="Defending Ring",
+		left_ring="Moonlight Ring",
 		right_ring="Kishar Ring",
 		back={ name="Intarabus's Cape", augments={'CHR+20','Mag. Acc+20 /Mag. Dmg.+20','CHR+10','"Fast Cast"+10','Phys. dmg. taken-10%',}},
 	}
@@ -128,7 +124,7 @@ function init_gear_sets()
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		range="Daurdabla",
 		head="Fili Calot +2", -- Replace with Brioso Roundlet +3 When I get them for string skill
-		feet="Brioso Slippers +3", -- Replace with Bihu slippers +3 when I get them for string skill
+		feet="Bihu Slippers +3",
 		waist="Embla Sash", -- Replace with Harfner's Stash when I get them for string skill
 		right_ear="Enchntr. Earring +1",  -- Replace with gersemi Earring when I get them for string skill
 	})
@@ -140,7 +136,7 @@ function init_gear_sets()
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		range="Daurdabla",
 		head="Fili Calot +2", -- Replace with Brioso Roundlet +3 When I get them for string skill
-		feet="Brioso Slippers +3", -- Replace with Bihu slippers +3 when I get them for string skill
+		feet="Bihu Slippers +3",
 		waist="Embla Sash", -- Replace with Harfner's Stash when I get them for string skill
 		right_ear="Enchntr. Earring +1",  -- Replace with gersemi Earring when I get them for string skill
 	})
@@ -156,7 +152,7 @@ function init_gear_sets()
 	
 	-- Precast sets to enhance JAs
 	
-    sets.precast.JA.Nightingale = {feet="Bihu Slippers +1"}
+    sets.precast.JA.Nightingale = {feet="Bihu Slippers +3"}
     sets.precast.JA.Troubadour = {body="Bihu Jstcorps. +3"}
     sets.precast.JA['Soul Voice'] = {legs="Bihu Cannions +3"}
 
@@ -314,7 +310,7 @@ function init_gear_sets()
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		range="Daurdabla",
 		head="Fili Calot +2", -- Replace with Brioso Roundlet +3 When I get them for string skill
-		feet="Brioso Slippers +3", -- Replace with Bihu slippers +3 when I get them for string skill
+		feet="Bihu Slippers +3",
 		waist="Embla Sash", -- Replace with Harfner's Stash when I get them for string skill
 		right_ear="Enchntr. Earring +1",  -- Replace with gersemi Earring when I get them for string skill
 	})
@@ -323,7 +319,7 @@ function init_gear_sets()
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		range="Daurdabla",
 		head="Fili Calot +2", -- Replace with Brioso Roundlet +3 When I get them for string skill
-		feet="Brioso Slippers +3", -- Replace with Bihu slippers +3 when I get them for string skill
+		feet="Bihu Slippers +3",
 		waist="Embla Sash", -- Replace with Harfner's Stash when I get them for string skill
 		right_ear="Enchntr. Earring +1",  -- Replace with gersemi Earring when I get them for string skill
 	})
