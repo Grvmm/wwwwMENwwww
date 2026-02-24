@@ -1,0 +1,17 @@
+sets.exported = {
+    main="Twashtar",
+    sub="Centovente",
+    ammo="Aurgelmir Orb +1",
+    head="Gleti's Mask",
+    body="Malignance Tabard",
+    hands="Gleti's Gauntlets",
+    legs={ name="Samnuha Tights", augments={'STR+8','DEX+9','"Dbl.Atk."+3','"Triple Atk."+2',}},
+    feet="Gleti's Boots",
+    neck="Elite Royal Collar",
+    waist="Plat. Mog. Belt",
+    left_ear="Telos Earring",
+    right_ear="Infused Earring",
+    left_ring="Moonlight Ring",
+    right_ring="Moonlight Ring",
+    back={ name="Senuna's Mantle", augments={'DEX+20','Accuracy+20 Attack+20','Accuracy+10','"Dbl.Atk."+10','Phys. dmg. taken-10%',}},
+}

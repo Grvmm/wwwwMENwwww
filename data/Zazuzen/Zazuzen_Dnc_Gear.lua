@@ -309,7 +309,7 @@ function init_gear_sets()
         main="Twashtar",
     	sub="Centovente",
         ammo="Aurgelmir Orb +1",
-        head={ name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
+        head={ name="Dampening Tam", augments={'DEX+10','Accuracy+15','Mag. Acc.+15','Quadruple Attack +3',}}, -- { name="Adhemar Bonnet +1", augments={'STR+12','DEX+12','Attack+20',}},
         neck={ name="Etoile Gorget +2", augments={'Path: A',}},
         left_ear="Sherida Earring",
         right_ear="Telos Earring",
@@ -319,7 +319,7 @@ function init_gear_sets()
         right_ring="Epona's Ring",
         back=gear.stp_jse_back,
         waist="Windbuffet Belt +1",
-        legs="Malignance Tights",
+        legs={ name="Herculean Trousers", augments={'Attack+24','"Triple Atk."+4','AGI+2','Accuracy+4',}}, -- "Malignance Tights",
         feet="Horos Toe Shoes +3"
     }
     sets.engaged.DTLite = set_combine(sets.engaged, {})

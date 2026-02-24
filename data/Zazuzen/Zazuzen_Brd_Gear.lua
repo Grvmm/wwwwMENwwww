@@ -103,7 +103,7 @@ function init_gear_sets()
 		main={ name="Kali", augments={'MP+60','Mag. Acc.+20','"Refresh"+1',}},
 		sub="Ammurapi Shield",
 		range="Marsyas",
-		head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}}, -- Replace with Brioso Roundlet +3 When I get them for magic Acc, also see if this or "Fili Calot +2" is better
+		head={ name="Vanya Hood", augments={'MP+50','"Fast Cast"+10','Haste+2%',}},
 		body="Brioso justaucorps +3",
 		hands="Brioso Cuffs +3",
 		legs="Fili Rhingrave +2",
@@ -123,7 +123,7 @@ function init_gear_sets()
 	sets.precast.FC['Horde Lullaby II'] = set_combine(sets.precast.Lullaby, {
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		range="Daurdabla",
-		head="Fili Calot +2", -- Replace with Brioso Roundlet +3 When I get them for string skill
+		head="Fili Calot +2",
 		feet="Bihu Slippers +3",
 		waist="Embla Sash", -- Replace with Harfner's Stash when I get them for string skill
 		right_ear="Enchntr. Earring +1",  -- Replace with gersemi Earring when I get them for string skill
@@ -135,7 +135,7 @@ function init_gear_sets()
 	sets.precast.FC['Horde Lullaby II'].AoE = set_combine(sets.precast.Lullaby, {
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		range="Daurdabla",
-		head="Fili Calot +2", -- Replace with Brioso Roundlet +3 When I get them for string skill
+		head="Fili Calot +2",
 		feet="Bihu Slippers +3",
 		waist="Embla Sash", -- Replace with Harfner's Stash when I get them for string skill
 		right_ear="Enchntr. Earring +1",  -- Replace with gersemi Earring when I get them for string skill
@@ -164,7 +164,7 @@ function init_gear_sets()
 	sets.precast.WS = {
 		range={ name="Linos", augments={'Attack+15','Weapon skill damage +3%','STR+6 DEX+6',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
+		body="Bihu Jstcorps. +3",
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -180,7 +180,6 @@ function init_gear_sets()
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		range={ name="Linos", augments={'Attack+15','Weapon skill damage +3%','STR+6 DEX+6',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -196,7 +195,6 @@ function init_gear_sets()
 		main={ name="Twashar", augments={'Path: A',}},
 		range={ name="Linos", augments={'Attack+15','Weapon skill damage +3%','STR+6 DEX+6',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -212,7 +210,6 @@ function init_gear_sets()
 		main="Naegling",
 		range={ name="Linos", augments={'Attack+15','Weapon skill damage +3%','STR+6 DEX+6',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
-		body={ name="Nyame Mail", augments={'Path: B',}},
 		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
@@ -268,7 +265,7 @@ function init_gear_sets()
 	sets.midcast.SongDebuff = {
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		sub=gear.subclass,
-		head="Fili Calot +2", -- Briso Roundlet +3 when I get them
+		head="Brioso roundlet +3",
 		body="Fili Hongreline +2",
 		hands="Fili Manchettes +2",
 		legs="Inyanga Shalwar +2",
@@ -289,7 +286,7 @@ function init_gear_sets()
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		sub=gear.subclass,
 		range="Marsyas", 
-    	head="Fili Calot +2",
+    	head="Brioso roundlet +3",
 		body="Fili Hongreline +2",
 		hands="Brioso Cuffs +3",
     	legs="Fili Rhingrave +2",
@@ -309,7 +306,7 @@ function init_gear_sets()
 	sets.midcast['Horde Lullaby II'] = set_combine(sets.midcast.Lullaby, {
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		range="Daurdabla",
-		head="Fili Calot +2", -- Replace with Brioso Roundlet +3 When I get them for string skill
+		head="Brioso roundlet +3",
 		feet="Bihu Slippers +3",
 		waist="Embla Sash", -- Replace with Harfner's Stash when I get them for string skill
 		right_ear="Enchntr. Earring +1",  -- Replace with gersemi Earring when I get them for string skill
@@ -318,7 +315,7 @@ function init_gear_sets()
 	sets.midcast['Horde Lullaby II'].AoE = set_combine(sets.midcast.Lullaby, {
 		main={ name="Carnwenhan", augments={'Path: A',}},
 		range="Daurdabla",
-		head="Fili Calot +2", -- Replace with Brioso Roundlet +3 When I get them for string skill
+		head="Brioso roundlet +3",
 		feet="Bihu Slippers +3",
 		waist="Embla Sash", -- Replace with Harfner's Stash when I get them for string skill
 		right_ear="Enchntr. Earring +1",  -- Replace with gersemi Earring when I get them for string skill
@@ -438,9 +435,9 @@ function init_gear_sets()
 	--	back="Moonlight Cape",waist="Carrier's Sash",legs="Aya. Cosciales +2",feet="Fili Cothurnes +1"}
 	sets.idle.DT = {
 		range={ name="Linos", augments={'Evasion+15','Phys. dmg. taken -4%','AGI+8',}},
-		head="Nyame Helm",
-		body="Nyame Mail",
-		hands="Raetic Bangles",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet="Fili Cothurnes +2",
 		neck="Elite Royal Collar",
@@ -456,11 +453,11 @@ function init_gear_sets()
 	sets.defense.PDT = {
 		-- main="Barfawc",
 		range={ name="Linos", augments={'Evasion+15','Phys. dmg. taken -4%','AGI+8',}},
-		head="Nyame Helm",
-		body="Nyame Mail",
-		hands="Raetic Bangles",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet="Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck="Elite Royal Collar",
 		waist="Plat. Mog. Belt",
 		left_ear="Infused Earring",
@@ -472,11 +469,11 @@ function init_gear_sets()
 	sets.defense.MDT = {
 		-- main="Barfawc",
 		range={ name="Linos", augments={'Evasion+15','Phys. dmg. taken -4%','AGI+8',}},
-		head="Nyame Helm",
-		body="Nyame Mail",
-		hands="Raetic Bangles",
+		head={ name="Nyame Helm", augments={'Path: B',}},
+		body={ name="Nyame Mail", augments={'Path: B',}},
+		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
-		feet="Nyame Sollerets",
+		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck="Elite Royal Collar",
 		waist="Plat. Mog. Belt",
 		left_ear="Infused Earring",
@@ -505,7 +502,7 @@ function init_gear_sets()
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+3','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		hands="Gazu Bracelets +1", ---{ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck={ name="Bard's Charm +2", augments={'Path: A',}},
@@ -522,7 +519,7 @@ function init_gear_sets()
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+3','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		hands="Gazu Bracelets +1",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck={ name="Bard's Charm +2", augments={'Path: A',}},
@@ -539,7 +536,7 @@ function init_gear_sets()
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+3','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		hands="Gazu Bracelets +1", ---{ name="Nyame Gauntlets", augments={'Path: B',}},
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck={ name="Bard's Charm +2", augments={'Path: A',}},
@@ -556,7 +553,7 @@ function init_gear_sets()
 		range={ name="Linos", augments={'Accuracy+15','"Dbl.Atk."+3','Quadruple Attack +3',}},
 		head={ name="Nyame Helm", augments={'Path: B',}},
 		body="Ashera Harness",
-		hands={ name="Nyame Gauntlets", augments={'Path: B',}},
+		hands="Gazu Bracelets +1",
 		legs={ name="Nyame Flanchard", augments={'Path: B',}},
 		feet={ name="Nyame Sollerets", augments={'Path: B',}},
 		neck={ name="Bard's Charm +2", augments={'Path: A',}},

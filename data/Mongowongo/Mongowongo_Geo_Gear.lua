@@ -298,7 +298,7 @@ function init_gear_sets()
     waist="Slipor Sash",
     left_ear="Infused Earring",
     right_ear="Odnowa Earring +1",
-    left_ring="Stikini Ring +1",
+    left_ring="shneddick ring",
     right_ring="Stikini Ring +1",
     back={ name="Lifestream Cape", augments={'Geomancy Skill +10','Indi. eff. dur. +20','Pet: Damage taken -1%',}},
 }
